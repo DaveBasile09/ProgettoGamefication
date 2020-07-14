@@ -15,10 +15,15 @@ public class MainMenu : MonoBehaviour
         public GameObject filiale4;
         public GameObject filiale5;
         public GameObject filiale6;
-        public GameObject b1;
-        public GameObject popup;
-// Start is called before the first frame update
-void Start()
+        public GameObject tablet;
+        public GameObject avvia;
+    public GameObject locazione;
+    public GameObject difficoltà;
+    public GameObject nomeFiliale;
+    public GameObject nonDisp;
+
+    // Start is called before the first frame update
+    void Start()
     {
         
         Image i6 = filiale6.GetComponent<Image>();
@@ -36,32 +41,32 @@ void Start()
         Image i5 = filiale5.GetComponent<Image>();
 
         i5.color = new Color(0.4f, 0.4f, 0.4f, 0.5f);
-        b1.SetActive(false);
+       
 
     }
     public void VienieVai()
     {
-        StartCoroutine(ShowAndHide(popup, 2.0f)); // 1 second
-    }
-    IEnumerator ShowAndHide(GameObject go, float delay)
-    {
-        go.SetActive(true);
-        yield return new WaitForSeconds(delay);
-        go.SetActive(false);
-    }
 
+        tablet.SetActive(true);
+        avvia.SetActive(false);
+        locazione.SetActive(false);
+        nomeFiliale.SetActive(false);
+        difficoltà.SetActive(false);
+        nonDisp.SetActive(true);
+        
+
+
+    }
 
     public void Appari()
         {
-        if (b1.active)
-        {
-            b1.SetActive(false);
-        }
-        else
-        {
-            b1.SetActive(true);
-        }
-            
+        tablet.SetActive(true);
+        tablet.SetActive(true);
+        avvia.SetActive(true);
+        locazione.SetActive(true);
+        nomeFiliale.SetActive(true);
+        difficoltà.SetActive(true);
+        nonDisp.SetActive(false);
 
-        }
+    }
 }
