@@ -3,7 +3,11 @@ guid: 9ae22bc280e7de24c8c0e3e3e09c7fb0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mezzo100F: {instanceID: 0}
+  - mezzo500F: {instanceID: 0}
+  - mezzo100: {instanceID: 0}
+  - mezzo500: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
