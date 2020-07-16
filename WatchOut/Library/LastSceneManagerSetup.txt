@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scenes/Macchinari/TestAutenticit\xE0.unity"
+- path: Assets/Scenes/Chiedi_Operatore/Chiedi_Operatore.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
