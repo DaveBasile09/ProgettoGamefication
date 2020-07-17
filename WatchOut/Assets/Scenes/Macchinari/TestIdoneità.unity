@@ -151,7 +151,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -195,6 +195,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7736282}
   m_CullTransparentMesh: 0
+--- !u!1001 &21334760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 776205437}
+    m_Modifications:
+    - target: {fileID: 2990804349745603304, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: BottoniTabletBassi
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -316
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1089.316
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54d33ac890c0bf1468083b2238ae7b1a, type: 3}
+--- !u!4 &21334761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 21334760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &48258692
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,10 +401,26 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Vassoio C:'
       objectReference: {fileID: 0}
+    - target: {fileID: 3549790188833367994, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+        type: 3}
     - target: {fileID: 7049953499399244435, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_Name
       value: VassoioC
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -152
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
@@ -646,7 +737,7 @@ PrefabInstance:
     - target: {fileID: 917241186902992226, guid: c3516c8955bbbaf429b1353ab39537e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 917241186902992226, guid: c3516c8955bbbaf429b1353ab39537e2,
         type: 3}
@@ -668,6 +759,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottoni
       objectReference: {fileID: 0}
+    - target: {fileID: 1871761252988414846, guid: c3516c8955bbbaf429b1353ab39537e2,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871761252988414846, guid: c3516c8955bbbaf429b1353ab39537e2,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871761252988414846, guid: c3516c8955bbbaf429b1353ab39537e2,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643600071745081773, guid: c3516c8955bbbaf429b1353ab39537e2,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643600071745081773, guid: c3516c8955bbbaf429b1353ab39537e2,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643600071745081773, guid: c3516c8955bbbaf429b1353ab39537e2,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3516c8955bbbaf429b1353ab39537e2, type: 3}
 --- !u!4 &403016151 stripped
@@ -688,10 +809,36 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Vassoio A:'
       objectReference: {fileID: 0}
+    - target: {fileID: 3549790188833367994, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+        type: 3}
     - target: {fileID: 7049953499399244435, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_Name
       value: VassoioA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -195
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 155.71844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 56.259888
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
@@ -839,7 +986,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1038,6 +1185,7 @@ RectTransform:
   m_Children:
   - {fileID: 371702121}
   - {fileID: 2012391189}
+  - {fileID: 21334761}
   - {fileID: 7736283}
   - {fileID: 1335677950}
   - {fileID: 403016151}
@@ -1140,10 +1288,26 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Vassoio D:'
       objectReference: {fileID: 0}
+    - target: {fileID: 3549790188833367994, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+        type: 3}
     - target: {fileID: 7049953499399244435, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_Name
       value: VassoioD
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
@@ -1291,7 +1455,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1428,7 +1592,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1505,7 +1669,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1747,7 +1911,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1866,10 +2030,26 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Vassoio B:'
       objectReference: {fileID: 0}
+    - target: {fileID: 3549790188833367994, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+        type: 3}
     - target: {fileID: 7049953499399244435, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_Name
       value: VassoioB
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -153
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
