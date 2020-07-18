@@ -4,34 +4,72 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragAndDrop : MonoBehaviour, IDragHandler,IEndDragHandler
+public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     
     private float x=0;
     private float y=0;
-    public GameObject Mezza100F;
-    public GameObject Mezza500F;
-    public GameObject Mezza100;
-    public GameObject Mezza500;
-    
+    private string nome;
+    public GameObject M500F;
+    public GameObject M100F;
+    public GameObject M500;
+    public GameObject M100;
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("preso");
-    }
+        if (gameObject.name == "500" && other.transform.name=="FessuraBanconote")
+        {
+            gameObject.SetActive(false);
+            M500.SetActive(true);
+            M500F.SetActive(false);
+            M100F.SetActive(false);
+            M100.SetActive(false);
+        }
+        if (gameObject.name == "500F" && other.transform.name=="FessuraBanconote")
+        {
+            gameObject.SetActive(false);
+            M500F.SetActive(true);
+            M100F.SetActive(false);
+            M500.SetActive(false);
+            M100.SetActive(false);
+        } 
+        if (gameObject.name == "100" && other.transform.name=="FessuraBanconote")
+        {
+            gameObject.SetActive(false);
+            M100.SetActive(true);
+            M500F.SetActive(false);
+            M100F.SetActive(false);
+            M500.SetActive(false);
+        } 
+        if (gameObject.name == "100F" && other.transform.name=="FessuraBanconote")
+        {
+            gameObject.SetActive(false);
+            M100F.SetActive(true);
+            M500F.SetActive(false);
+            M500.SetActive(false);
+            M100.SetActive(false);
+        }
 
+
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("inizi");
         x = transform.position.x;
         y = transform.position.y;
-        
+        nome = transform.name;
+        M500F.SetActive(false);
+        M100F.SetActive(false);
+        M500.SetActive(false);
+        M100.SetActive(false);
+
     }
 
    
     public void OnDrag(PointerEventData eventData)
     {
-        
         transform.position = Input.mousePosition;
     }
     
@@ -41,5 +79,8 @@ public class DragAndDrop : MonoBehaviour, IDragHandler,IEndDragHandler
         Vector3 temp = new Vector3(x,y,0);
         transform.position=temp;
     }
+    
+    
+    
     
 }
