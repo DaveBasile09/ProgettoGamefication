@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Analisi_normativa_interna/Analisi_normativa_interna.unity
+- path: "Assets/Scenes/Macchinari/TestAutenticit\xE0.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
