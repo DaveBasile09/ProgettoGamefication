@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/Scenes/Macchinari/TestAutenticit\xE0.unity"
     guid: 7e4161105dead654ea09a631e0d701db
+  - enabled: 1
+    path: Assets/Scenes/Analisi_normativa_interna/Analisi_normativa_interna.unity
+    guid: b64292c608ddc3d43834fe92b740b7a9
   m_configObjects: {}
