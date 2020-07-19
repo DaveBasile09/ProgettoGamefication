@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Analisi_normativa_interna/Check_istruzioni_macchine.unity
     guid: 4c15017dc48728944a110bc7b393267f
+  - enabled: 1
+    path: Assets/Scenes/Banca/SegnalaDatiFiliale.unity
+    guid: e287a21ff214430478b3503ff2a5e30e
+  - enabled: 1
+    path: Assets/Scenes/Banca/SegnalaVersioneMacchine.unity
+    guid: 5512471ee8549f1499a802c347190e2c
+  - enabled: 1
+    path: Assets/Scenes/Banca/SegnalaMacchine.unity
+    guid: 69279a5983591d9489a8c8b9af570428
   m_configObjects: {}

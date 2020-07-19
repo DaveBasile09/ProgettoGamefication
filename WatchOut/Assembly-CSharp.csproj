@@ -56,9 +56,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AnalisiNormativa.cs" />
+     <Compile Include="Assets\BancaManager.cs" />
      <Compile Include="Assets\MainMenu.cs" />
+     <Compile Include="Assets\Scenes\Banca\DatiFilialeScript.cs" />
      <Compile Include="Assets\Scenes\Macchinari\DragAndDrop.cs" />
-     <Compile Include="Assets\segnalazione.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

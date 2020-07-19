@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Analisi_Contratti/SegnalazionePresenzaClausola2.unity
+- path: Assets/Scenes/Banca/Banca.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
