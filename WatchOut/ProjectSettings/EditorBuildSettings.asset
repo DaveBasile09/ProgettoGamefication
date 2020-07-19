@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Analisi_normativa_interna/Analisi_normativa_interna.unity
     guid: b64292c608ddc3d43834fe92b740b7a9
+  - enabled: 1
+    path: Assets/Scenes/Analisi_normativa_interna/Check_istruzioni_macchine.unity
+    guid: 4c15017dc48728944a110bc7b393267f
   m_configObjects: {}
