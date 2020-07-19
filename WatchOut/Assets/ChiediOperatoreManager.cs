@@ -16,6 +16,14 @@ public void avvia1()
             SceneManager.LoadScene("Analisi_Contratti", LoadSceneMode.Single);
         }
     }
+    public void avvia2()
+    {
+        if (!c2)
+        {
+            SceneManager.LoadScene("Analisi_Contratti", LoadSceneMode.Single);
+        }
+    }
+
     public static void indietro()
     {
         SceneManager.LoadScene("Chiedi_Operatore", LoadSceneMode.Single);
