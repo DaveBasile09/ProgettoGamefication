@@ -34,4 +34,12 @@ public class AnalisiContrattiManager : MonoBehaviour
         }
 
     }
+    public void clausola3()
+    {
+        if (!cl3)
+        {
+            SceneManager.LoadScene("SegnalazionePresenzaContratto", LoadSceneMode.Single);
+        }
+
+    }
 }
