@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Banca/SegnalaDatFiliale.unity
+- path: Assets/Scenes/Analisi_normativa_interna/Analisi_normativa_interna.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
