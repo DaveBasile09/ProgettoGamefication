@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Banca/SegnalaMacchine.unity
     guid: 69279a5983591d9489a8c8b9af570428
+  - enabled: 1
+    path: Assets/Scenes/Analisi_Contratti/Analisi_Contratti.unity
+    guid: a30fdf92c31643c4fa653ec8017900fe
+  - enabled: 1
+    path: Assets/Scenes/Analisi_Contratti/SegnalazionePresenzaClausola1.unity
+    guid: c24878bf0aa7ad547937ff65bbe6a354
+  - enabled: 1
+    path: Assets/Scenes/Analisi_Contratti/SegnalazionePresenzaClausola2.unity
+    guid: 29ecfdb9269eb424ca8503343e4c9260
+  - enabled: 1
+    path: Assets/Scenes/Analisi_Contratti/SegnalazionePresenzaContratto.unity
+    guid: 649386525806f184da98646229906005
   m_configObjects: {}
