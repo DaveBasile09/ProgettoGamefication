@@ -10,10 +10,6 @@ public class AnalisiNormativa : MonoBehaviour
 public GameObject tablet;
 public void presenzaNormativa(string scenename)
         {
-            
-        tablet.SetActive(false);
-        
-
-
+            SceneManager.LoadScene(scenename, LoadSceneMode.Single);
     }
 }
