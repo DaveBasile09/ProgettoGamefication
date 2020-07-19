@@ -64,11 +64,14 @@
   <ItemGroup>
     <Compile Include="Assets\AnalisiContrattiManager.cs" />
     <Compile Include="Assets\AnalisiNormativa.cs" />
+    <Compile Include="Assets\BancaManager.cs" />
     <Compile Include="Assets\ChiediOperatoreManager.cs" />
     <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\Scenes\Banca\DatiFilialeScript.cs" />
     <Compile Include="Assets\Scenes\Macchinari\DragAndDrop.cs" />
     <Compile Include="Assets\SegnalazioneClausola1.cs" />
-    <Compile Include="Assets\segnalazione.cs" />
+    <Compile Include="Assets\SegnalazioneClausola2.cs" />
+    <Compile Include="Assets\SegnalazioneContrattoFornitura.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -26,4 +26,12 @@ public class AnalisiContrattiManager : MonoBehaviour
             SceneManager.LoadScene("SegnalazionePresenzaClausola1", LoadSceneMode.Single);
         }
     }
+    public void clausola2()
+    {
+        if (!cl2)
+        {
+            SceneManager.LoadScene("SegnalazionePresenzaClausola2", LoadSceneMode.Single);
+        }
+
+    }
 }
