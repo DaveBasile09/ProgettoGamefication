@@ -151,7 +151,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -262,11 +262,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6987346218057430046, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54d33ac890c0bf1468083b2238ae7b1a, type: 3}
 --- !u!4 &21334761 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6490841344029507024, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+  m_CorrespondingSourceObject: {fileID: 6987346218057430046, guid: 54d33ac890c0bf1468083b2238ae7b1a,
     type: 3}
   m_PrefabInstance: {fileID: 21334760}
   m_PrefabAsset: {fileID: 0}
@@ -815,7 +820,7 @@ PrefabInstance:
     - target: {fileID: 917241186902992226, guid: c3516c8955bbbaf429b1353ab39537e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 917241186902992226, guid: c3516c8955bbbaf429b1353ab39537e2,
         type: 3}
@@ -1043,8 +1048,8 @@ GameObject:
   - component: {fileID: 725146766}
   - component: {fileID: 725146765}
   - component: {fileID: 725146764}
-  - component: {fileID: 725146763}
   - component: {fileID: 725146762}
+  - component: {fileID: 725146763}
   m_Layer: 0
   m_Name: 500
   m_TagString: Untagged
@@ -1064,7 +1069,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1101,13 +1106,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 725146760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae22bc280e7de24c8c0e3e3e09c7fb0, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b58cb1f594818448bf54b196a5686f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mezza100F: {fileID: 0}
-  Mezza500F: {fileID: 0}
-  Mezza100: {fileID: 0}
-  Mezza500: {fileID: 0}
 --- !u!61 &725146764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1263,15 +1264,15 @@ RectTransform:
   m_Children:
   - {fileID: 371702121}
   - {fileID: 2012391189}
-  - {fileID: 21334761}
   - {fileID: 7736283}
   - {fileID: 1335677950}
-  - {fileID: 403016151}
   - {fileID: 725146761}
   - {fileID: 1423609182}
   - {fileID: 1712830586}
   - {fileID: 1322198973}
+  - {fileID: 403016151}
   - {fileID: 1011462499}
+  - {fileID: 21334761}
   - {fileID: 343004516}
   - {fileID: 2048560509}
   m_Father: {fileID: 0}
@@ -1312,7 +1313,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1593,8 +1594,8 @@ GameObject:
   - component: {fileID: 1322198978}
   - component: {fileID: 1322198977}
   - component: {fileID: 1322198976}
-  - component: {fileID: 1322198975}
   - component: {fileID: 1322198974}
+  - component: {fileID: 1322198975}
   m_Layer: 0
   m_Name: 100
   m_TagString: Untagged
@@ -1614,7 +1615,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1651,13 +1652,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1322198972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae22bc280e7de24c8c0e3e3e09c7fb0, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b58cb1f594818448bf54b196a5686f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mezza100F: {fileID: 0}
-  Mezza500F: {fileID: 0}
-  Mezza100: {fileID: 0}
-  Mezza500: {fileID: 0}
 --- !u!61 &1322198976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1751,7 +1748,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1807,8 +1804,8 @@ GameObject:
   - component: {fileID: 1423609187}
   - component: {fileID: 1423609186}
   - component: {fileID: 1423609185}
-  - component: {fileID: 1423609184}
   - component: {fileID: 1423609183}
+  - component: {fileID: 1423609184}
   m_Layer: 0
   m_Name: 500F
   m_TagString: Untagged
@@ -1828,7 +1825,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1865,13 +1862,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1423609181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae22bc280e7de24c8c0e3e3e09c7fb0, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b58cb1f594818448bf54b196a5686f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mezza100F: {fileID: 0}
-  Mezza500F: {fileID: 0}
-  Mezza100: {fileID: 0}
-  Mezza500: {fileID: 0}
 --- !u!61 &1423609185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2049,8 +2042,8 @@ GameObject:
   - component: {fileID: 1712830591}
   - component: {fileID: 1712830590}
   - component: {fileID: 1712830589}
-  - component: {fileID: 1712830588}
   - component: {fileID: 1712830587}
+  - component: {fileID: 1712830588}
   m_Layer: 0
   m_Name: 100F
   m_TagString: Untagged
@@ -2070,7 +2063,7 @@ RectTransform:
   m_LocalScale: {x: 0.23437999, y: 0.23437999, z: 0.23437999}
   m_Children: []
   m_Father: {fileID: 776205437}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2107,13 +2100,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712830585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae22bc280e7de24c8c0e3e3e09c7fb0, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b58cb1f594818448bf54b196a5686f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mezza100F: {fileID: 0}
-  Mezza500F: {fileID: 0}
-  Mezza100: {fileID: 0}
-  Mezza500: {fileID: 0}
 --- !u!61 &1712830589
 BoxCollider2D:
   m_ObjectHideFlags: 0
