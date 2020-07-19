@@ -11,9 +11,5 @@ public GameObject tablet;
 public void presenzaNormativa(string scenename)
         {
             SceneManager.LoadScene(scenename, LoadSceneMode.Single);
-            
-        
-
-
     }
 }
