@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Chiedi_Operatore/Chiedi_Operatore.unity
+- path: Assets/Scenes/Analisi_normativa_interna/Check_istruzioni_macchine.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
