@@ -60,8 +60,8 @@
      <Compile Include="Assets\BancaManager.cs" />
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\Scenes\Banca\DatiFilialeScript.cs" />
+     <Compile Include="Assets\Scenes\Macchinari\DeDIdoneità.cs" />
      <Compile Include="Assets\Scenes\Macchinari\DragAndDrop.cs" />
-     <Compile Include="Assets\Scenes\Macchinari\DragAndDropIdoneità.cs" />
      <Compile Include="Assets\SegnalazioneClausola1.cs" />
      <Compile Include="Assets\SegnalazioneClausola2.cs" />
      <Compile Include="Assets\SegnalazioneContrattoFornitura.cs" />

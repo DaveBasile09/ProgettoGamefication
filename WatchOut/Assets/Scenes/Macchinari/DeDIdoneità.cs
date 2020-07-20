@@ -5,11 +5,11 @@ using UnityEngine.EventSystems;
 
 public class DragAndDropIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
 {
-    private float x=0;
-    private float y=0;
-    public GameObject Fessura;
+    private float x = 0;
+    private float y = 0;
     public GameObject mezza1;
     public GameObject mezza2;
+    public GameObject Fessura;
     private static GameObject ultimo1;
     private static GameObject ultimo2;
 
@@ -20,7 +20,7 @@ public class DragAndDropIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
         {
             if(ultimo1!=null && ultimo2!=null)
                 ultimo1.SetActive(false);
-                ultimo2.SetActive(false);
+            ultimo2.SetActive(false);
             gameObject.SetActive(false);
             mezza1.SetActive(true);
             mezza2.SetActive(true);
