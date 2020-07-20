@@ -20,7 +20,7 @@ public void avvia1()
     {
         if (!c2)
         {
-            SceneManager.LoadScene("Analisi_Contratti", LoadSceneMode.Single);
+            SceneManager.LoadScene("Analisi_Simec", LoadSceneMode.Single);
         }
     }
 
