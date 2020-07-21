@@ -5,9 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class BancaManager : MonoBehaviour
 {
+    /* GameObject */
+    public GameObject popupTarm;
+    public GameObject popupBpm;
+
+
+
     public static bool datiFiliale = true;
     public static bool macchine = true;
     public static bool versioneMacchine = true;
+
+
+
 
     public void segnalaDatiFiliale()
     {
@@ -45,6 +54,25 @@ public class BancaManager : MonoBehaviour
     {
         versioneMacchine = false;
         tornaIndietro();
+    }
+
+    public void showBpm()
+    {
+        StartCoroutine( ShowAndHide(popupBpm, 2.5f) ); 
+    }
+    
+    
+    public void showTarm()
+    {
+        StartCoroutine( ShowAndHide(popupTarm, 2.5f) ); 
+    }
+    
+    
+    IEnumerator ShowAndHide( GameObject go, float delay )
+    {
+        go.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        go.SetActive(false);
     }
 
 }
