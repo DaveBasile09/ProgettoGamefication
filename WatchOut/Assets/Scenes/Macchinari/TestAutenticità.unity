@@ -470,7 +470,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1441533215}
-        m_MethodName: segnalaVassoio
+        m_MethodName: segnalaVassoioD
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1043,7 +1043,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1441533215}
-        m_MethodName: segnalaVassoio
+        m_MethodName: segnalaVassoioB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2487,7 +2487,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1441533215}
-        m_MethodName: segnalaVassoio
+        m_MethodName: segnalaVassoioC
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
