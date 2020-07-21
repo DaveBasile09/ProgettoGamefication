@@ -17,6 +17,7 @@ public class AnalisiContrattiManager : MonoBehaviour
     public void termina()
     {
         ChiediOperatoreManager.c1 = true;
+        HomeManager.controllo6 = true;
         ChiediOperatoreManager.termina();
     }
     public void clausola1()
