@@ -71,11 +71,14 @@
     <Compile Include="Assets\Scenes\Banca\DatiFilialeScript.cs" />
     <Compile Include="Assets\Scenes\Macchinari\DeDIdoneità.cs" />
     <Compile Include="Assets\Scenes\Macchinari\DragAndDrop.cs" />
+    <Compile Include="Assets\SegnalazioneBancomat.cs" />
+    <Compile Include="Assets\SegnalazioneBanconote.cs" />
     <Compile Include="Assets\SegnalazioneClausola1.cs" />
     <Compile Include="Assets\SegnalazioneClausola2.cs" />
     <Compile Include="Assets\SegnalazioneContrattoFornitura.cs" />
     <Compile Include="Assets\SegnalazioneDocumentoManager.cs" />
     <Compile Include="Assets\SegnalazioneFotocopiaManager.cs" />
+    <Compile Include="Assets\SegnalazioneIstruzioniNormativa.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

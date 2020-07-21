@@ -28,7 +28,7 @@ public void avvia1()
     {
         if (!c3)
         {
-            SceneManager.LoadScene("Analisi_Contratti", LoadSceneMode.Single);
+            SceneManager.LoadScene("Analisi_normativa_interna", LoadSceneMode.Single);
         }
     }
 
