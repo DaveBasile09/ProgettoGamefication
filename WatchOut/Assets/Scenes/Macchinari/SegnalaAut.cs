@@ -10,12 +10,10 @@ public class SegnalaAut : MonoBehaviour
     
     void Start()
     {
-
         GameObject.Find("500").SetActive(DragAndDrop.v1);
         GameObject.Find("100").SetActive(DragAndDrop.v2);
         GameObject.Find("500F").SetActive(DragAndDrop.v3);
         GameObject.Find("100F").SetActive(DragAndDrop.v4);
-        
     }
 
     public void toggleManager()

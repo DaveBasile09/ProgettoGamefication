@@ -29,7 +29,7 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
             if(ultimo!=null)
                 ultimo.SetActive(false);
             GameObject obj=Instantiate(Testo,transform.parent);
-            Destroy(obj,5);
+            Destroy(obj,1);
             gameObject.SetActive(false);
             Disa(gameObject);
             Mezza.SetActive(true);
@@ -62,6 +62,10 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
         x = transform.position.x;
         y = transform.position.y;
         Mezza.SetActive(false);
+        GameObject.Find("500").SetActive(DragAndDrop.v1);
+        GameObject.Find("100").SetActive(DragAndDrop.v2);
+        GameObject.Find("500F").SetActive(DragAndDrop.v3);
+        GameObject.Find("100F").SetActive(DragAndDrop.v4);
     }
 
    

@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scenes\Macchinari\DeDIdoneità.cs" />
      <Compile Include="Assets\Scenes\Macchinari\DragAndDrop.cs" />
      <Compile Include="Assets\Scenes\Macchinari\SegnalaAut.cs" />
+     <Compile Include="Assets\Scenes\Macchinari\SegnalaIdo.cs" />
      <Compile Include="Assets\SegnalazioneBancomat.cs" />
      <Compile Include="Assets\SegnalazioneBanconote.cs" />
      <Compile Include="Assets\SegnalazioneClausola1.cs" />
