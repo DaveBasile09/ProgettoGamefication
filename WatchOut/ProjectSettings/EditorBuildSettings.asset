@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Analisi_normativa_interna/Check_istruzioni_macchine.unity
     guid: 4c15017dc48728944a110bc7b393267f
   - enabled: 1
+    path: Assets/Scenes/Banca/Banca.unity
+    guid: bfa68a18f049e8841b80365b03298b25
+  - enabled: 1
     path: Assets/Scenes/Banca/SegnalaDatiFiliale.unity
     guid: e287a21ff214430478b3503ff2a5e30e
   - enabled: 1
@@ -29,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Analisi_Simec/SegnalazionePresenzaFotocopia.unity
     guid: 7d03144d0cc1f2447a22f9d4b075e6a4
+  - enabled: 1
+    path: Assets/Scenes/Analisi_normativa_interna/SegnalazioneNormativaBanconote.unity
+    guid: c10f7c2351856c348bf0fedaa388e605
+  - enabled: 1
+    path: Assets/Scenes/Analisi_normativa_interna/SegnalazioneNormativaCaricamentoBancomat.unity
+    guid: 9e6ee0b0ce8cbb1499e413a76f12cc76
   - enabled: 1
     path: Assets/Scenes/Analisi_Simec/SegnalazionePresenzaDocumento.unity
     guid: 024c02f5b0c2f82459aa59ab8800f26b

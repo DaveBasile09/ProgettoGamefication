@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class DatiFilialeScript : MonoBehaviour
+public class VersioneMacchineScript : MonoBehaviour
 {
+
     public GameObject x1;
     public GameObject x2;
     public GameObject x3;
     public GameObject x4;
     public GameObject x5;
+    public GameObject x6;
 
 
     public void check1()
@@ -37,6 +38,12 @@ public class DatiFilialeScript : MonoBehaviour
         x5.SetActive(!x5.activeSelf);
     }
 
+    public void check6()
+    {
+        x6.SetActive(!x6.activeSelf);
+    }
+
+
     public void tornaIndietro()
     {
         BancaManager.tornaIndietro();
@@ -44,6 +51,6 @@ public class DatiFilialeScript : MonoBehaviour
 
     public void terminaSegnalazione()
     {
-        BancaManager.terminaSegnalazioneDatiFiliale();
+        BancaManager.terminaSegnalazioneVersioneMacchine();
     }
 }
