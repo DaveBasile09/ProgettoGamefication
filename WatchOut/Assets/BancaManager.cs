@@ -75,4 +75,15 @@ public class BancaManager : MonoBehaviour
         go.SetActive(false);
     }
 
+    public void tornaAllaChecklist()
+    {
+        SceneManager.LoadScene("HomeBanca", LoadSceneMode.Single);
+    }
+
+    public void concludiVerifica()
+    {
+        HomeManager.controllo1 = true;
+        tornaAllaChecklist();
+    }
+
 }
