@@ -40,4 +40,8 @@ public void avvia1()
     {
         SceneManager.LoadScene("Chiedi_Operatore", LoadSceneMode.Single);
     }
+    public void tornaCheck()
+    {
+        SceneManager.LoadScene("HomeBanca", LoadSceneMode.Single);
+    }
 }

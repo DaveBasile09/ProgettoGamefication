@@ -17,6 +17,7 @@ public class Analisi_Simec_Manager : MonoBehaviour
     public void termina()
     {
         ChiediOperatoreManager.c2 = true;
+        HomeManager.controllo4 = true;
         ChiediOperatoreManager.termina();
     }
     public void clausola1()

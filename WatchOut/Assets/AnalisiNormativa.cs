@@ -20,6 +20,7 @@ public GameObject tablet;
     public void termina()
     {
         ChiediOperatoreManager.c3 = true;
+        HomeManager.controllo5 = true;
         ChiediOperatoreManager.termina();
     }
     public void clausola1()
