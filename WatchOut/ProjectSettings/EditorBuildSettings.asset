@@ -33,6 +33,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Analisi_Simec/SegnalazionePresenzaFotocopia.unity
     guid: 7d03144d0cc1f2447a22f9d4b075e6a4
   - enabled: 1
+    path: Assets/Scenes/Analisi_normativa_interna/SegnalazioneNormativaBanconote.unity
+    guid: c10f7c2351856c348bf0fedaa388e605
+  - enabled: 1
+    path: Assets/Scenes/Analisi_normativa_interna/SegnalazioneNormativaCaricamentoBancomat.unity
+    guid: 9e6ee0b0ce8cbb1499e413a76f12cc76
+  - enabled: 1
     path: Assets/Scenes/Analisi_Simec/SegnalazionePresenzaDocumento.unity
     guid: 024c02f5b0c2f82459aa59ab8800f26b
   - enabled: 1
