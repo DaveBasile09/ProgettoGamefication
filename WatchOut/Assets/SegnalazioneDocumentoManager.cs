@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SegnalazioneDocumentoManager : MonoBehaviour
 {
@@ -37,7 +38,23 @@ public class SegnalazioneDocumentoManager : MonoBehaviour
     public void inviaSegnalazione()
     {
         Analisi_Simec_Manager.cl2 = true;
+        if (x1.activeSelf) { Analisi_Simec_Manager.fotocopiaS += -10; Analisi_Simec_Manager.fotocopiaR += 20; }
+        else { Analisi_Simec_Manager.fotocopiaS += -25; Analisi_Simec_Manager.fotocopiaR += -20; }
+        if (x2.activeSelf) { Analisi_Simec_Manager.fotocopiaS += -10; Analisi_Simec_Manager.fotocopiaR += 20; }
+        else { Analisi_Simec_Manager.fotocopiaS += -25; Analisi_Simec_Manager.fotocopiaR += -20; }
+        if (x3.activeSelf) { Analisi_Simec_Manager.fotocopiaS += -30; Analisi_Simec_Manager.fotocopiaR += -20; }
+        
+
+
         SceneManager.LoadScene("Analisi_Simec", LoadSceneMode.Single);
 
+    }
+    private void Start()
+    {
+
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
     }
 }
