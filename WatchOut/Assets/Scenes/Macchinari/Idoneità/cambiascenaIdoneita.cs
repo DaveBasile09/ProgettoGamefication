@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,7 @@ public class cambiascenaIdoneita : MonoBehaviour
     public static bool C=false;
     public static bool D=false;
     public static string ultimo;
+    public static Dictionary<string, HashSet<int>> risIdo = new Dictionary<string, HashSet<int>>();
     
     public void segnalaVassoioA()
     {
@@ -79,7 +81,41 @@ public class cambiascenaIdoneita : MonoBehaviour
                 break;
             
         }
+        risIdo.Add(ultimo,SegnalaIdo.scelte);
+        stampar();
         SceneManager.LoadScene("TestIdoneità", LoadSceneMode.Single);
         
+    }
+    
+    private void stampa()
+    {
+        Debug.Log("*******************");
+        foreach (var x  in SegnalaIdo.scelte)
+        {
+            Debug.Log(x);
+        }
+    } 
+    private void stampar()
+    {
+        Debug.Log("*******************");
+        foreach (var x  in risIdo)
+        {
+            Debug.Log(x.Key);
+            Debug.Log("--");
+            foreach (var y in x.Value)
+            {
+                Debug.Log(y);  
+            }
+              
+        }
+    }
+
+
+
+    public void CalcolaPunteggio()
+    {
+        /*
+         * QUI ANDRA' CALCOLATO IL PUNTEGGIO FINALE DEI VARI VASSOI DEL TEST D'IDONEITA'
+         */
     }
 }
