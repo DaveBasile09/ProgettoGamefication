@@ -1,5 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -33,10 +36,30 @@ public class SegnalaIdo : MonoBehaviour
     //EventSystem.current.currentSelectedGameObject.name
     public void toggleX(string X)
     {
-        Text t=GameObject.Find(X).GetComponent<Text>();
-        if (t.text=="X")
-            t.text="";
-        else  
-            t.text = "X"; 
+        HashSet<int> scelte = new HashSet<int>();
+        Text t = GameObject.Find(X).GetComponent<Text>();
+        Debug.Log(cambiascenaIdoneita.ultimo);
+        String x=(EventSystem.current.currentSelectedGameObject.name);
+        Debug.Log(x);
+        int y= (int)(x[x.Length - 1]-'0');
+        Debug.Log(y);
+        if (t.text == "X")
+        {
+            scelte.Remove(y);
+            t.text = "";
+        }
+        else
+        {
+            scelte.Add(y);
+            t.text = "X";
+        }
+        Debug.Log(scelte.ToString());
+        Debug.Log(scelte.Count);
+       
     }
+
+   
+
+       
+    
 }
