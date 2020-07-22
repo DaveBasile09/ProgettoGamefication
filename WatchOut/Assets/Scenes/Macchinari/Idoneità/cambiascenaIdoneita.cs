@@ -10,7 +10,7 @@ public class cambiascenaIdoneita : MonoBehaviour
     public static bool B=false;
     public static bool C=false;
     public static bool D=false;
-    private static string ultimo;
+    public static string ultimo;
     
     public void segnalaVassoioA()
     {
