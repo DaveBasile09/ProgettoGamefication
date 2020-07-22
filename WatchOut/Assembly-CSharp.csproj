@@ -65,12 +65,12 @@
      <Compile Include="Assets\Scenes\Banca\DatiFilialeScript.cs" />
      <Compile Include="Assets\Scenes\Banca\MacchineScript.cs" />
      <Compile Include="Assets\Scenes\Banca\VersioneMacchineScript.cs" />
-     <Compile Include="Assets\Scenes\Macchinari\Cambiascena.cs" />
-     <Compile Include="Assets\Scenes\Macchinari\DeDIdoneità.cs" />
-     <Compile Include="Assets\Scenes\Macchinari\DragAndDrop.cs" />
+     <Compile Include="Assets\Scenes\Macchinari\Autenticità\Cambiascena.cs" />
+     <Compile Include="Assets\Scenes\Macchinari\Autenticità\DragAndDrop.cs" />
+     <Compile Include="Assets\Scenes\Macchinari\Autenticità\SegnalaAut.cs" />
+     <Compile Include="Assets\Scenes\Macchinari\Idoneità\DeDIdoneità.cs" />
      <Compile Include="Assets\Scenes\Macchinari\Idoneità\SegnalaIdo.cs" />
      <Compile Include="Assets\Scenes\Macchinari\Idoneità\cambiascenaIdoneita.cs" />
-     <Compile Include="Assets\Scenes\Macchinari\SegnalaAut.cs" />
      <Compile Include="Assets\SegnalazioneBancomat.cs" />
      <Compile Include="Assets\SegnalazioneBanconote.cs" />
      <Compile Include="Assets\SegnalazioneClausola1.cs" />

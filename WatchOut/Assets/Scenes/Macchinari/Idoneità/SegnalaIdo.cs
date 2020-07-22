@@ -11,12 +11,12 @@ using UnityEngine.UI;
 
 public class SegnalaIdo : MonoBehaviour
 {
-    public static HashSet<int> scelte=new HashSet<int>() ;
+    public static HashSet<int> scelteId=new HashSet<int>() ;
     void Start()
     {
         GameObject.Find("500").SetActive(DragAndDrop.v1);
         GameObject.Find("100").SetActive(DragAndDrop.v2);
-        scelte.Clear();
+        scelteId.Clear();
     }
 
     public void toggleManager()
@@ -42,12 +42,12 @@ public class SegnalaIdo : MonoBehaviour
         int y= (int)(x[x.Length - 1]-'0');
         if (t.text == "X")
         {
-            scelte.Remove(y);
+            scelteId.Remove(y);
             t.text = "";
         }
         else
         {
-            scelte.Add(y);
+            scelteId.Add(y);
             t.text = "X";
         }
 
@@ -56,7 +56,7 @@ public class SegnalaIdo : MonoBehaviour
 
     private void stampa()
     {
-        foreach (var x  in scelte)
+        foreach (var x  in scelteId)
         {
             Debug.Log(x);
         }

@@ -81,34 +81,12 @@ public class cambiascenaIdoneita : MonoBehaviour
                 break;
             
         }
-        risIdo.Add(ultimo,SegnalaIdo.scelte);
-        stampar();
+        risIdo.Add(ultimo,SegnalaIdo.scelteId);
         SceneManager.LoadScene("TestIdoneità", LoadSceneMode.Single);
         
     }
     
-    private void stampa()
-    {
-        Debug.Log("*******************");
-        foreach (var x  in SegnalaIdo.scelte)
-        {
-            Debug.Log(x);
-        }
-    } 
-    private void stampar()
-    {
-        Debug.Log("*******************");
-        foreach (var x  in risIdo)
-        {
-            Debug.Log(x.Key);
-            Debug.Log("--");
-            foreach (var y in x.Value)
-            {
-                Debug.Log(y);  
-            }
-              
-        }
-    }
+   
 
 
 
