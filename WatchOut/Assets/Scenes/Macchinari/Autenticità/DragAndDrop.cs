@@ -10,17 +10,37 @@ using UnityEngine.SceneManagement;
 
 public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
 {
-    
+    /**
+     * x -> coordinate di x iniziali per il drag and drop
+     * y -> coordinate di y iniziali per il drag and drop
+     * Mezza -> Mezza banconota relativa a quella del drag and drop   
+     * Testo -> Testo "girare banconota nei 4 versi"
+     * Fessura -> GameObjet per l'inserimento delle banconote
+     * V -> V del macchinario, implica che è andato a buon fine
+     * X -> X del macchinario, implica che è andato a male
+     * ultimo -> ultima banconota provata
+     * v1 -> stato banconota 500   
+     * v2 -> stato banconota 100
+     * v3 -> stato banconota 500F
+     * v4 -> stato banconota 100F
+     * testoN -> aka testo Neutro  , "inserici soldi nella macchina"
+     * testoR -> aka testo Risultato  , in base al risultato delle banconote vere o false
+     */
     private float x=0;
     private float y=0;
     public GameObject Mezza;
     public GameObject Testo;
     public GameObject Fessura;
+    public GameObject V;
+    public GameObject X;
     private static GameObject ultimo;
     public static bool v1=true;
     public static bool v2=true;
     public static bool v3=true;
     public static bool v4=true;
+    public GameObject testoN;
+    public GameObject testoR;
+    
    
     public void OnTriggerEnter2D(Collider2D other)
     {
