@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BancaManager : MonoBehaviour
 {
     /* GameObject */
     public GameObject popupTarm;
     public GameObject popupBpm;
+    public GameObject popupSegnalazioni;
 
 
     /* Controllo per le segnalazioni già effettuate */
@@ -17,16 +19,22 @@ public class BancaManager : MonoBehaviour
     public static bool versioneMacchine = true;
     
     /* Punteggi per segnalazione */
-    public static int PuntiDatiFilialeEconomico;
-    public static int PuntiDatiFilialeReputazione;
+    public static int PuntiDatiFilialeEconomico = 0;
+    public static int PuntiDatiFilialeReputazione = 0;
 
-    public static int PuntiMacchineEconomico;
-    public static int PuntiMacchineReputazione;
-
-    public static int PuntiVersioneMacchineEconomico;
-    public static int PuntiVersioneMacchineReputazione;
+    public static int PuntiMacchineEconomico = 0;
+    public static int PuntiMacchineReputazione = 0;
     
-
+    public static int PuntiVersioneMacchineEconomico = 0;
+    public static int PuntiVersioneMacchineReputazione = 0;
+    
+    private void Start()
+    {
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
+    }
 
 
 
@@ -37,11 +45,8 @@ public class BancaManager : MonoBehaviour
 
     public void nonSegnalareDatiFiliale()
     {
-        PuntiDatiFilialeEconomico = 0; 
-        PuntiDatiFilialeReputazione = 0;
+        PuntiDatiFilialeReputazione = 10;
         datiFiliale = false;
-        
-        /* fai vedere popup */
     }
 
     public void segnalaMacchine()
@@ -50,8 +55,8 @@ public class BancaManager : MonoBehaviour
     }
     public void nonSegnalareMacchine()
     {
-        PuntiMacchineEconomico = 0;
-        PuntiMacchineReputazione = 0;
+        PuntiMacchineEconomico -= 20;
+        PuntiMacchineReputazione -= 60;
         macchine = false;
     }
 
@@ -61,8 +66,8 @@ public class BancaManager : MonoBehaviour
     } 
     public void nonSegnalareVersioneMacchinari()
     {
-        PuntiVersioneMacchineEconomico = 0;
-        PuntiVersioneMacchineReputazione = 0;
+        PuntiVersioneMacchineEconomico -= 80;
+        PuntiVersioneMacchineReputazione -= 80;
         versioneMacchine = false;
     }
     
@@ -116,8 +121,19 @@ public class BancaManager : MonoBehaviour
 
     public void concludiVerifica()
     {
-        HomeManager.controllo1 = true;
-        tornaAllaChecklist();
+        if (!(datiFiliale || macchine || versioneMacchine))
+        {
+            int soldi = PuntiDatiFilialeEconomico + PuntiMacchineEconomico + PuntiVersioneMacchineEconomico;
+            int reputazione = PuntiDatiFilialeReputazione + PuntiMacchineReputazione + PuntiVersioneMacchineReputazione;
+            HomeManager.controllo1 = true;
+            HomeManager.soldi += soldi;
+            HomeManager.reputazione += reputazione;
+            tornaAllaChecklist();
+        }
+        else
+        {
+            StartCoroutine( ShowAndHide(popupSegnalazioni, 2.5f) ); 
+        }
     }
 
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MacchineScript : MonoBehaviour
 {
@@ -12,7 +13,13 @@ public class MacchineScript : MonoBehaviour
     public GameObject x5;
     public GameObject x6;
 
-
+    private void Start()
+    {
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
+    }
     public void check1()
     {
         x1.SetActive(!x1.activeSelf);
@@ -50,6 +57,52 @@ public class MacchineScript : MonoBehaviour
 
     public void terminaSegnalazione()
     {
+        if (x1.activeSelf)
+        {
+            BancaManager.PuntiMacchineEconomico -= 10;
+            BancaManager.PuntiMacchineReputazione += 30;
+        }
+        else
+        {
+            BancaManager.PuntiMacchineEconomico -= 20;
+            BancaManager.PuntiMacchineReputazione -= 30;
+        }
+        
+        if (x2.activeSelf)
+        {
+            BancaManager.PuntiMacchineEconomico -= 10;
+            BancaManager.PuntiMacchineReputazione += 30;
+        }
+        else
+        {
+            BancaManager.PuntiMacchineEconomico -= 20;
+            BancaManager.PuntiMacchineReputazione -= 30;
+        }
+        
+        if (x3.activeSelf)
+        {
+            BancaManager.PuntiMacchineEconomico -= 20;
+            BancaManager.PuntiMacchineReputazione -= 30;
+        }
+        
+        if (x4.activeSelf)
+        {
+            BancaManager.PuntiMacchineEconomico -= 20;
+            BancaManager.PuntiMacchineReputazione -= 30;
+        }
+        
+        if (x5.activeSelf)
+        {
+            BancaManager.PuntiMacchineEconomico -= 20;
+            BancaManager.PuntiMacchineReputazione -= 30;
+        }
+        
+        if (x6.activeSelf)
+        {
+            BancaManager.PuntiMacchineEconomico -= 20;
+            BancaManager.PuntiMacchineReputazione -= 30;
+        }
+        
         BancaManager.terminaSegnalazioneMacchine();
     }
 }

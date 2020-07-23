@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VersioneMacchineScript : MonoBehaviour
 {
@@ -12,7 +13,14 @@ public class VersioneMacchineScript : MonoBehaviour
     public GameObject x5;
     public GameObject x6;
 
+    private void Start()
+    {
 
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
+    }
     public void check1()
     {
         x1.SetActive(!x1.activeSelf);
@@ -51,6 +59,64 @@ public class VersioneMacchineScript : MonoBehaviour
 
     public void terminaSegnalazione()
     {
-        BancaManager.terminaSegnalazioneVersioneMacchine();
+
+        if(x1.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 60;
+            BancaManager.PuntiVersioneMacchineReputazione -= 40;
+        }
+        
+        if(x2.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 15;
+            BancaManager.PuntiVersioneMacchineReputazione += 40;
+        }
+        else
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 60;
+            BancaManager.PuntiVersioneMacchineReputazione -= 40;
+        }
+
+        if(x3.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 60;
+            BancaManager.PuntiVersioneMacchineReputazione -= 40;
+        }
+
+        if (x4.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 15;
+            BancaManager.PuntiVersioneMacchineReputazione += 40;
+        }
+        else
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 60;
+            BancaManager.PuntiVersioneMacchineReputazione -= 40;
+        }
+        
+        if (x5.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 15;
+            BancaManager.PuntiVersioneMacchineReputazione += 40;
+        }
+        else
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 60;
+            BancaManager.PuntiVersioneMacchineReputazione -= 40;
+        }
+        
+        if (x6.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 60;
+            BancaManager.PuntiVersioneMacchineReputazione -= 40;
+        }
+        
+        
+
+
+
+
+
+            BancaManager.terminaSegnalazioneVersioneMacchine();
     }
 }

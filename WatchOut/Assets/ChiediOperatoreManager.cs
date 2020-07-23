@@ -12,7 +12,6 @@ public class ChiediOperatoreManager : MonoBehaviour
     public static bool c3=false;
     private void Start()
     {
-
         Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
         Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
         t1.text = System.Convert.ToString(HomeManager.soldi);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DatiFilialeScript : MonoBehaviour
 {
@@ -11,7 +12,14 @@ public class DatiFilialeScript : MonoBehaviour
     public GameObject x4;
     public GameObject x5;
 
+    private void Start()
+    {
 
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
+    }
     public void check1()
     {
         x1.SetActive(!x1.activeSelf);
@@ -44,6 +52,38 @@ public class DatiFilialeScript : MonoBehaviour
 
     public void terminaSegnalazione()
     {
+        if (x1.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 20;
+            BancaManager.PuntiDatiFilialeReputazione -= 30;
+        }
+
+        if (x2.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 20;
+            BancaManager.PuntiDatiFilialeReputazione -= 30;
+        }
+        
+        if (x3.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 20;
+            BancaManager.PuntiDatiFilialeReputazione -= 30;
+        }
+        
+        if (x4.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 20;
+            BancaManager.PuntiDatiFilialeReputazione -= 30;
+        }
+        
+        if (x5.activeSelf)
+        {
+            BancaManager.PuntiVersioneMacchineEconomico -= 20;
+            BancaManager.PuntiDatiFilialeReputazione -= 30;
+        }
+
         BancaManager.terminaSegnalazioneDatiFiliale();
     }
+    
+    
 }
