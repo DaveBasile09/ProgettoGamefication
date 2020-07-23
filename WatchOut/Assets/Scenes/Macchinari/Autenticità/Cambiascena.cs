@@ -12,7 +12,7 @@ public class Cambiascena : MonoBehaviour
     public static bool D=false;
     private static string ultimo;
     public static Dictionary<string, HashSet<int>> risAut = new Dictionary<string, HashSet<int>>();
-    
+
     public void segnalaVassoioA()
     {
         if (!A)
@@ -72,7 +72,28 @@ public class Cambiascena : MonoBehaviour
                     break;
             
         }
-        risAut.Add(ultimo,SegnalaAut.scelteAut);
+
+        if (risAut.ContainsKey(ultimo))
+            {
+                foreach(KeyValuePair<string, HashSet<int>> el in risAut)
+                {
+                    if (el.Key == ultimo)
+                    {
+                        foreach (var p in SegnalaAut.scelteAut)
+                        {
+                            el.Value.Add(p);
+                        }
+                    }
+                } 
+            }
+            else
+            { 
+              risAut.Add(ultimo, new HashSet<int>());
+              foreach (var p in SegnalaAut.scelteAut)
+              {
+                  risAut[ultimo].Add(p);
+              }
+            }
         SceneManager.LoadScene("TestAutenticità", LoadSceneMode.Single);
     }
     
@@ -80,9 +101,14 @@ public class Cambiascena : MonoBehaviour
     
     public void CalcolaPunteggio()
     {
-        /*
-         * QUI ANDRA' CALCOLATO IL PUNTEGGIO FINALE DEI VARI VASSOI DEL TEST D'IDONEITA'
-         */
+        foreach (var x in risAut)
+        {
+            Debug.Log(x.Key);
+            foreach (var y in x.Value)
+            {
+                Debug.Log(y);
+            }
+        }
     }
     
 }

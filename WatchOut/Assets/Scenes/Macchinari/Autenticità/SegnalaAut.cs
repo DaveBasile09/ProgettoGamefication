@@ -10,7 +10,7 @@ public class SegnalaAut : MonoBehaviour
     
     public static HashSet<int> scelteAut=new HashSet<int>() ;
 
-    // Start is called before the first frame update
+    
     
     void Start()
     {
@@ -37,7 +37,7 @@ public class SegnalaAut : MonoBehaviour
         }
     }
     
-    //EventSystem.current.currentSelectedGameObject.name
+
     public void toggleX(string X)
     {
         Text t = GameObject.Find(X).GetComponent<Text>();
