@@ -14,6 +14,10 @@ public class SegnalaIdo : MonoBehaviour
     public static HashSet<int> scelteId=new HashSet<int>() ;
     void Start()
     {
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
         GameObject.Find("500").SetActive(DragAndDrop.v1);
         GameObject.Find("100").SetActive(DragAndDrop.v2);
         scelteId.Clear();
@@ -54,14 +58,7 @@ public class SegnalaIdo : MonoBehaviour
        
     }
 
-    private void stampa()
-    {
-        foreach (var x  in scelteId)
-        {
-            Debug.Log(x);
-        }
-    }
-   
+  
 
        
     

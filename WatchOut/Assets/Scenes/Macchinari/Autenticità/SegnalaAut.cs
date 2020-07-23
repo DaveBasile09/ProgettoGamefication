@@ -7,11 +7,9 @@ using UnityEngine.UI;
 
 public class SegnalaAut : MonoBehaviour
 {
-    
     public static HashSet<int> scelteAut=new HashSet<int>() ;
 
-    
-    
+
     void Start()
     {
         Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
@@ -24,7 +22,6 @@ public class SegnalaAut : MonoBehaviour
         GameObject.Find("500F").SetActive(DragAndDrop.v3);
         GameObject.Find("100F").SetActive(DragAndDrop.v4);
         scelteAut.Clear();
-
     }
 
     public void toggleManager()

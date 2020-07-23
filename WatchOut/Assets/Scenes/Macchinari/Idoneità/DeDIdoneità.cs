@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
+using UnityEngine.UI;
 
 
 public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
@@ -41,6 +42,10 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
 
     void Start()
     {
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
         x = transform.position.x;
         y = transform.position.y;
         mezza1.SetActive(false);

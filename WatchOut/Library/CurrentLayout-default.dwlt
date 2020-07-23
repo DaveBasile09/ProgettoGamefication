@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -71,10 +71,10 @@ MonoBehaviour:
     y: 0
     width: 381
     height: 635
-  m_MinSize: {x: 276, y: 342}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 275, y: 321}
+  m_MaxSize: {x: 10001, y: 14021}
   vertical: 1
-  controlID: 110
+  controlID: 89
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -97,7 +97,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 678, y: 342}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 677, y: 321}
+  m_MaxSize: {x: 18003, y: 14021}
   vertical: 0
-  controlID: 35
+  controlID: 15
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,10 +188,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 678, y: 342}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 677, y: 321}
+  m_MaxSize: {x: 18003, y: 14021}
   vertical: 0
-  controlID: 36
+  controlID: 16
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,8 +237,8 @@ MonoBehaviour:
     y: 0
     width: 655
     height: 635
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -264,8 +264,8 @@ MonoBehaviour:
     y: 0
     width: 381
     height: 342
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -393,9 +393,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fc7f0100
-      m_LastClickedID: 98300
-      m_ExpandedIDs: 624bffffd64bffffde4bffffe24bfffff24bffff624effffca55ffffcc55ffff5856ffff4a58ffff7c59ffff7a5affffc85fffffca5fffffd05fffffd45ffffff45ffffff65ffffffa5fffff0860ffffb260ffff6062ffff1263ffffb064ffffb264ffff1666ffffa87affffaa7affff607bffffa2aeffffdcaeffffe2aeffff66afffff6aafffff70afffffb0afffffb6afffffdaafffffdcaffffff6b0ffff28b3fffffab4ffff32b9ffffcab9ffff12edffff14edffff6eedffff70edffffccedffffceedffff04f5ffff68f5ffffc0f5ffff10f9ffff5efbffff843900008c390000b2390000f03900007c3c0000803c0000943c0000d83c0000e43c0000403d0000743d0000ca3d0000fa3d0000366500003a65000082650000aa650000b66500004e66000022670000b2690000dc690000e4690000486a0000da6d0000046e00000c6e0000706e0000fc5801003c5901006c590100de590100a2720100e272010078730100aa730100ca730100c0740100c874010032750100f6790100167a0100767a0100d07a0100de7a0100de7b0100e67b0100507c0100807c0100a07c0100b07c0100bc7c0100ca7c0100527f0100e07f0100f47f0100188001002c80010042800100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 48f5ffff5ef5ffff76f5ffff8cf5ffffb0f5ffffc6f5ffffdcf5ffff48f6ffff5ef6ffff66f6ffff98390000b4390000e239000084420000a2420000bc420000ea420000004300001243000046430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -455,9 +455,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 952.50946, y: 495.04376, z: -2075.125}
+    m_Target: {x: 991.1821, y: 499.07782, z: -2121.25}
     speed: 2
-    m_Value: {x: 952.50946, y: 495.04376, z: -2075.125}
+    m_Value: {x: 991.1821, y: 499.07782, z: -2121.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -507,9 +507,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 927.9375
+    m_Target: 873.69464
     speed: 2
-    m_Value: 927.9375
+    m_Value: 873.69464
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -611,20 +611,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/HomeBanca
+    - "Assets/Scenes/Macchinari/Autenticit\xE0"
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/HomeBanca
+  - "Assets/Scenes/Macchinari/Autenticit\xE0"
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ASUS\Desktop\ProgettoGamefication\WatchOut
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 120}
-    m_SelectedIDs: 883b0000
-    m_LastClickedID: 15240
-    m_ExpandedIDs: 000000006e3b0000703b00007a3b0000843b000000ca9a3b
+    m_SelectedIDs: d23a0000
+    m_LastClickedID: 15058
+    m_ExpandedIDs: 00000000b63a0000b83a0000ba3a0000bc3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -652,7 +652,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e3b0000703b0000
+    m_ExpandedIDs: 00000000b63a0000b83a0000ba3a0000bc3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
