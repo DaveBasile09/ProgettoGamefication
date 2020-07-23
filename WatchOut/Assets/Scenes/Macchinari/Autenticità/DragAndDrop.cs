@@ -39,7 +39,8 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
     public static bool v3=true;
     public static bool v4=true;
     public GameObject testoN;
-    public GameObject testoR;
+    public GameObject testoFalse;
+    public GameObject testoVere;
     
    
     public void OnTriggerEnter2D(Collider2D other)
@@ -50,12 +51,42 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
                 ultimo.SetActive(false);
             GameObject obj=Instantiate(Testo,transform.parent);
             Destroy(obj,1);
+            contorno();
             gameObject.SetActive(false);
             Disa(gameObject);
             Mezza.SetActive(true);
             ultimo = Mezza;
             
             
+        }
+    }
+
+    private void contorno()
+    {
+        testoN.SetActive(false);
+        switch (gameObject.name)
+        {
+            case "500": V.SetActive(true);
+                        X.SetActive(false);
+                        testoFalse.SetActive(false);
+                        testoVere.SetActive(true);
+                        break;
+            case "100": V.SetActive(false);
+                        X.SetActive(true);
+                        testoFalse.SetActive(true);
+                        testoVere.SetActive(false);
+                        break;
+            case "500F": V.SetActive(true);
+                         X.SetActive(false); 
+                         testoFalse.SetActive(false);
+                         testoVere.SetActive(true);
+                         break;
+            case "100F": V.SetActive(false);
+                         X.SetActive(true); 
+                         testoFalse.SetActive(true);
+                         testoVere.SetActive(false);
+                         break;
+                
         }
     }
 
@@ -81,11 +112,20 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         x = transform.position.x;
         y = transform.position.y;
+        Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
+        Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
+        t1.text = System.Convert.ToString(HomeManager.soldi);
+        t2.text = System.Convert.ToString(HomeManager.reputazione);
         Mezza.SetActive(false);
         GameObject.Find("500").SetActive(DragAndDrop.v1);
         GameObject.Find("100").SetActive(DragAndDrop.v2);
         GameObject.Find("500F").SetActive(DragAndDrop.v3);
         GameObject.Find("100F").SetActive(DragAndDrop.v4);
+        V.SetActive(false);
+        X.SetActive(false);
+        testoN.SetActive(true);
+        testoFalse.SetActive(false);
+        testoVere.SetActive(false);
     }
 
    
