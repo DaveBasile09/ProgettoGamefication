@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,10 +11,21 @@ public class BancaManager : MonoBehaviour
     public GameObject popupBpm;
 
 
-
+    /* Controllo per le segnalazioni già effettuate */
     public static bool datiFiliale = true;
     public static bool macchine = true;
     public static bool versioneMacchine = true;
+    
+    /* Punteggi per segnalazione */
+    public static int PuntiDatiFilialeEconomico;
+    public static int PuntiDatiFilialeReputazione;
+
+    public static int PuntiMacchineEconomico;
+    public static int PuntiMacchineReputazione;
+
+    public static int PuntiVersioneMacchineEconomico;
+    public static int PuntiVersioneMacchineReputazione;
+    
 
 
 
@@ -23,15 +35,37 @@ public class BancaManager : MonoBehaviour
         if(datiFiliale) UnityEngine.SceneManagement.SceneManager.LoadScene("SegnalaDatiFiliale",LoadSceneMode.Single);
     }
 
+    public void nonSegnalareDatiFiliale()
+    {
+        PuntiDatiFilialeEconomico = 0; 
+        PuntiDatiFilialeReputazione = 0;
+        datiFiliale = false;
+        
+        /* fai vedere popup */
+    }
+
     public void segnalaMacchine()
     {
         if(macchine) UnityEngine.SceneManagement.SceneManager.LoadScene("SegnalaMacchine", LoadSceneMode.Single);
+    }
+    public void nonSegnalareMacchine()
+    {
+        PuntiMacchineEconomico = 0;
+        PuntiMacchineReputazione = 0;
+        macchine = false;
     }
 
     public void segnalaVersioneMacchinari()
     {
         if (versioneMacchine) UnityEngine.SceneManagement.SceneManager.LoadScene("SegnalaVersioneMacchine", LoadSceneMode.Single);
+    } 
+    public void nonSegnalareVersioneMacchinari()
+    {
+        PuntiVersioneMacchineEconomico = 0;
+        PuntiVersioneMacchineReputazione = 0;
+        versioneMacchine = false;
     }
+    
 
     public static void tornaIndietro()
     {
