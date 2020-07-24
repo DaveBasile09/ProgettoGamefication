@@ -13,6 +13,8 @@ public class cambiascenaIdoneita : MonoBehaviour
     public static bool D=false;
     public static string ultimo;
     public static Dictionary<string, HashSet<int>> risIdo = new Dictionary<string, HashSet<int>>();
+    private  int parzialeSoldi=0;
+    private  int parzialeReputazione=0;
     
     public void segnalaVassoioA()
     {
@@ -164,6 +166,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                 {
                     HomeManager.soldi += 10;
                     HomeManager.reputazione += 40;
+                    parzialeSoldi += 10;
+                    parzialeReputazione += 40;
                     //+10,+40
                 }
                 else
@@ -173,6 +177,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                     {
                         HomeManager.soldi -= 60;
                         HomeManager.reputazione -= 80;
+                        parzialeSoldi -= 60;
+                        parzialeReputazione -= 80;
                         //-60,-80
                         break;
                     }
@@ -181,6 +187,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                     {
                         HomeManager.soldi -= 40;
                         HomeManager.reputazione -= 40;
+                        parzialeSoldi -= 40;
+                        parzialeReputazione -= 40;
                         //-40,-40
                     }
                 }
@@ -193,6 +201,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                 {
                     HomeManager.soldi += 0;
                     HomeManager.reputazione += 20;
+                    parzialeSoldi += 0;
+                    parzialeReputazione += 20;
                     //+0,+20
                     break;
                 }
@@ -201,6 +211,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                 {
                     HomeManager.soldi -= 60;
                     HomeManager.reputazione -= 80;
+                    parzialeSoldi -= 60;
+                    parzialeReputazione -= 80;
                     //-60,-80
                     break;
                 }
@@ -213,6 +225,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                 {
                     HomeManager.soldi += 0;
                     HomeManager.reputazione += 20;
+                    parzialeSoldi += 0;
+                    parzialeReputazione += 20;
                     //+0,+20
                     break;
                 }
@@ -221,6 +235,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                 {
                     HomeManager.soldi -= 60;
                     HomeManager.reputazione -= 80;
+                    parzialeSoldi -= 60;
+                    parzialeReputazione -= 80;
                     //-60,-80
                     break;
                 }
@@ -234,6 +250,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                 {
                     HomeManager.soldi += 0;
                     HomeManager.reputazione += 20;
+                    parzialeSoldi += 0;
+                    parzialeReputazione += 20;
                     //+0,+20
                     break;
                 }
@@ -242,6 +260,8 @@ public class cambiascenaIdoneita : MonoBehaviour
                 {
                     HomeManager.soldi -= 60;
                     HomeManager.reputazione -= 80;
+                    parzialeSoldi -= 60;
+                    parzialeReputazione -= 80;
                     //-60,-80
                     break;
                 }
@@ -287,6 +307,8 @@ public class cambiascenaIdoneita : MonoBehaviour
         CalcolaPunteggio();
         HomeManager.controllo2 = true;
         cambiascena.Ido = true;
+        EndgameManager.soldi[1] = parzialeSoldi;
+        EndgameManager.reputazione[1] = parzialeReputazione;
         SceneManager.LoadScene("scelta", LoadSceneMode.Single);
 
     }

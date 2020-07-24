@@ -14,6 +14,8 @@ public class Cambiascena : MonoBehaviour
     public static bool D=false;
     private static string ultimo;
     public static Dictionary<string, HashSet<int>> risAut = new Dictionary<string, HashSet<int>>();
+    private  int parzialeSoldi=0;
+    private  int parzialeReputazione=0;
 
     public void segnalaVassoioA()
     {
@@ -155,6 +157,8 @@ public class Cambiascena : MonoBehaviour
                 if (x == -1)
                 {
                     HomeManager.soldi += 0;
+                    parzialeSoldi += 0;
+                    parzialeReputazione += 30;
                     HomeManager.reputazione += 30;
                     //+0,+30
                     break;
@@ -164,6 +168,8 @@ public class Cambiascena : MonoBehaviour
                 {
                     HomeManager.soldi -= 60;
                     HomeManager.reputazione -= 80;
+                    parzialeSoldi -= 60;
+                    parzialeReputazione -= 80;
                     //-60,-80
                     break;
                 }
@@ -177,6 +183,8 @@ public class Cambiascena : MonoBehaviour
                 {
                     HomeManager.soldi += 30;
                     HomeManager.reputazione += 40;
+                    parzialeSoldi += 30;
+                    parzialeReputazione += 40;
                     //+30,+40
                 }
                 else
@@ -186,6 +194,8 @@ public class Cambiascena : MonoBehaviour
                     {
                         HomeManager.soldi -= 60;
                         HomeManager.reputazione -= 80;
+                        parzialeSoldi -= 60;
+                        parzialeReputazione -= 80;
                         //-60,-80
                         break;
                     }
@@ -194,6 +204,8 @@ public class Cambiascena : MonoBehaviour
                     {
                         HomeManager.soldi -= 50;
                         HomeManager.reputazione -= 40;
+                        parzialeSoldi -= 50;
+                        parzialeReputazione -= 40;
                         //-50,-40
                     }
                 }
@@ -207,6 +219,8 @@ public class Cambiascena : MonoBehaviour
                 {
                     HomeManager.soldi += 30;
                     HomeManager.reputazione += 40;
+                    parzialeSoldi += 30;
+                    parzialeReputazione += 40;
                     //+30,+40
                 }
                 else
@@ -216,6 +230,8 @@ public class Cambiascena : MonoBehaviour
                     {
                         HomeManager.soldi -= 60;
                         HomeManager.reputazione -= 80;
+                        parzialeSoldi -= 60;
+                        parzialeReputazione -= 80;
                         //-60,-80
                     }
                     //segnalazioni sbagliate
@@ -223,6 +239,8 @@ public class Cambiascena : MonoBehaviour
                     {
                         HomeManager.soldi -= 50;
                         HomeManager.reputazione -= 40;
+                        parzialeSoldi += 0;
+                        parzialeReputazione += 30;
                         //-50,-40
                     }
                 }
@@ -236,6 +254,8 @@ public class Cambiascena : MonoBehaviour
                 {
                     HomeManager.soldi += 0;
                     HomeManager.reputazione += 30;
+                    parzialeSoldi += 0;
+                    parzialeReputazione += 30;
                     //+0,+30
                     break;
                 }
@@ -244,6 +264,8 @@ public class Cambiascena : MonoBehaviour
                 {
                     HomeManager.soldi -= 60;
                     HomeManager.reputazione -= 80;
+                    parzialeSoldi -= 60;
+                    parzialeReputazione -= 80;
                     //-60,-80
                     break;
                 }
@@ -279,6 +301,8 @@ public class Cambiascena : MonoBehaviour
         CalcolaPunteggio();
         HomeManager.controllo3 = true;
         cambiascena.aut = true;
+        EndgameManager.soldi[2] = parzialeSoldi;
+        EndgameManager.reputazione[2] = parzialeReputazione;
         SceneManager.LoadScene("scelta", LoadSceneMode.Single);
 
     }
