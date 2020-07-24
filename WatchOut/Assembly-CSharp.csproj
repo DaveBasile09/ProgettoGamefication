@@ -70,6 +70,7 @@
     <Compile Include="Assets\EndgameManager.cs" />
     <Compile Include="Assets\HomeManager.cs" />
     <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\NavigaBottoni.cs" />
     <Compile Include="Assets\Scenes\Banca\DatiFilialeScript.cs" />
     <Compile Include="Assets\Scenes\Banca\MacchineScript.cs" />
     <Compile Include="Assets\Scenes\Banca\VersioneMacchineScript.cs" />
