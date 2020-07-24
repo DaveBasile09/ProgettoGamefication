@@ -35,7 +35,7 @@ public class HomeManager : MonoBehaviour
         {
             fatto6.SetActive(true);
             nfatto6.SetActive(false);
-
+            
         }
         if (controllo1)
         {
