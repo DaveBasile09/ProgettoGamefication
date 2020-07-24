@@ -81,5 +81,9 @@ public class HomeManager : MonoBehaviour
     {
         SceneManager.LoadScene("Chiedi_operatore", LoadSceneMode.Single);
     }
+    public void terminaIspezione()
+    {
+        SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+    }
     
 }

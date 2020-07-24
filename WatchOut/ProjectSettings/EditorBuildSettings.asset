@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Analisi_Contratti/Analisi_Contratti.unity
     guid: a30fdf92c31643c4fa653ec8017900fe
   - enabled: 1
+    path: Assets/Scenes/Endgame/Endgame.unity
+    guid: 77ffd431d8025444fa05a105ee34ea99
+  - enabled: 1
     path: Assets/Scenes/Menu/SampleScene.unity
     guid: 6ce84145c4bfc264f8d3b9a28b355a05
   - enabled: 1

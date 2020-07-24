@@ -44,6 +44,8 @@ public class AnalisiContrattiManager : MonoBehaviour
         HomeManager.controllo6 = true;
         HomeManager.soldi += cl1S + cl2S + cl3S;
         HomeManager.reputazione += cl1R + cl2R + cl3R;
+        EndgameManager.soldi[5]= cl1S + cl2S + cl3S;
+        EndgameManager.reputazione[5]= cl1R + cl2R + cl3R;
         ChiediOperatoreManager.termina();
     }
     public void clausola1()

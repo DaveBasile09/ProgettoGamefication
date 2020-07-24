@@ -29,6 +29,8 @@ public class Analisi_Simec_Manager : MonoBehaviour
         if (!cl2) { fotocopiaS += -20; fotocopiaR += -40; }
         HomeManager.soldi += fotocopiaS + banconotaS;
         HomeManager.reputazione+= fotocopiaR + banconotaR;
+        EndgameManager.soldi[3]= fotocopiaS + banconotaS;
+        EndgameManager.reputazione[3] = fotocopiaR + banconotaR;
         ChiediOperatoreManager.termina();
     }
     public void clausola1()

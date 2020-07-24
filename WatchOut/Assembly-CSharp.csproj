@@ -67,6 +67,7 @@
     <Compile Include="Assets\Analisi_Simec_Manager.cs" />
     <Compile Include="Assets\BancaManager.cs" />
     <Compile Include="Assets\ChiediOperatoreManager.cs" />
+    <Compile Include="Assets\EndgameManager.cs" />
     <Compile Include="Assets\HomeManager.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scenes\Banca\DatiFilialeScript.cs" />

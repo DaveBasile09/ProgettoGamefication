@@ -40,7 +40,9 @@ public GameObject tablet;
         if (!cl1) { presenzaNormativaS += 0; presenzaNormativaR += 20;}
         if (!cl2) { normativaBancomatS += 0; normativaBancomatR += 20;}
         HomeManager.soldi += presenzaNormativaS + normativaBancomatS + normativaBanconoteS;
+        EndgameManager.soldi[4] = presenzaNormativaS + normativaBancomatS + normativaBanconoteS;
         HomeManager.reputazione += presenzaNormativaR + normativaBancomatR + normativaBanconoteR;
+        EndgameManager.reputazione[4] = presenzaNormativaR + normativaBancomatR + normativaBanconoteR;
 
         ChiediOperatoreManager.termina();
     }
