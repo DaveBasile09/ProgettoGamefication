@@ -124,6 +124,7 @@ public class cambiascenaIdoneita : MonoBehaviour
                 break;
             
         }
+        
         if (risIdo.ContainsKey(ultimo))
         {
             foreach(KeyValuePair<string, HashSet<int>> el in risIdo)
@@ -139,9 +140,11 @@ public class cambiascenaIdoneita : MonoBehaviour
         }
         else
         { 
+            Debug.Log("ultimo --->"+ultimo);
             risIdo.Add(ultimo, new HashSet<int>());
-            foreach (var p in SegnalaAut.scelteAut)
+            foreach (var p in SegnalaIdo.scelteId)
             {
+                Debug.Log("p --> "+p);
                 risIdo[ultimo].Add(p);
             }
         }
@@ -154,9 +157,95 @@ public class cambiascenaIdoneita : MonoBehaviour
 
     public void CalcolaPunteggio()
     {
-        /*
-         * QUI ANDRA' CALCOLATO IL PUNTEGGIO FINALE DEI VARI VASSOI DEL TEST D'IDONEITA'
-         */
+          //SCELTE SEGNALAZIONE VASSOIO A
+            foreach (var x in risIdo["A"])
+            {
+                if (x == 1 || x == 2)
+                {
+                    HomeManager.soldi += 10;
+                    HomeManager.reputazione += 40;
+                    //+10,+40
+                }
+                else
+                {
+                    //non segnalare
+                    if (x == -1)
+                    {
+                        HomeManager.soldi -= 60;
+                        HomeManager.reputazione -= 80;
+                        //-60,-80
+                        break;
+                    }
+                    //segnalazioni sbagliate
+                    else
+                    {
+                        HomeManager.soldi -= 40;
+                        HomeManager.reputazione -= 40;
+                        //-40,-40
+                    }
+                }
+            }
+            
+            //SCELTE SEGNALAZIONE VASSOIO B
+            foreach (var x in risIdo["B"])
+            {
+                if (x == -1)
+                {
+                    HomeManager.soldi += 0;
+                    HomeManager.reputazione += 20;
+                    //+0,+20
+                    break;
+                }
+                //ha segnalato
+                else
+                {
+                    HomeManager.soldi -= 60;
+                    HomeManager.reputazione -= 80;
+                    //-60,-80
+                    break;
+                }
+            }
+            
+            //SCELTE SEGNALAZIONE VASSOIO C
+            foreach (var x in risIdo["C"])
+            {
+                if (x == -1)
+                {
+                    HomeManager.soldi += 0;
+                    HomeManager.reputazione += 20;
+                    //+0,+20
+                    break;
+                }
+                //ha segnalato
+                else
+                {
+                    HomeManager.soldi -= 60;
+                    HomeManager.reputazione -= 80;
+                    //-60,-80
+                    break;
+                }
+            }
+            
+            //SCELTE SEGNALAZIONE VASSOIO D
+            foreach (var x in risIdo["D"])
+            {
+                //non ha segnalato
+                if (x == -1)
+                {
+                    HomeManager.soldi += 0;
+                    HomeManager.reputazione += 20;
+                    //+0,+20
+                    break;
+                }
+                //ha segnalato
+                else
+                {
+                    HomeManager.soldi -= 60;
+                    HomeManager.reputazione -= 80;
+                    //-60,-80
+                    break;
+                }
+            }
     }
     
     
@@ -184,6 +273,15 @@ public class cambiascenaIdoneita : MonoBehaviour
             {
                 HashSet<int> temp= new HashSet<int>(){-1};
                 risIdo.Add("D", temp);
+            }
+        }
+
+        foreach (var x in risIdo)
+        {
+            Debug.Log(x.Key);
+            foreach (var y in x.Value)
+            {
+                Debug.Log(y);
             }
         }
         CalcolaPunteggio();

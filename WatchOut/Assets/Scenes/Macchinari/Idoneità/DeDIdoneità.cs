@@ -18,6 +18,8 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
     public GameObject percBuone;
     private static GameObject ultimo1;
     private static GameObject ultimo2;
+    private static GameObject ultimoLogore;
+    private static GameObject ultimoBuone;
 
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -29,6 +31,12 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
                 ultimo1.SetActive(false);
                 ultimo2.SetActive(false);
             }
+
+            if (ultimoBuone!=null)
+            {
+                ultimoBuone.SetActive(false);
+                ultimoLogore.SetActive(false);
+            }
             mezza1.SetActive(true);
             mezza2.SetActive(true);
             percBuone.SetActive(true);
@@ -36,9 +44,15 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
             ultimo1 = mezza1;
             ultimo2 = mezza2;
             gameObject.SetActive(false);
+            percLogore.SetActive(true);
+            percBuone.SetActive(true);
+            ultimoBuone = percBuone;
+            ultimoLogore = percLogore;
 
         }
     }
+
+    
 
     void Start()
     {
