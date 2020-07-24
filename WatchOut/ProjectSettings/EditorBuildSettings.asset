@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Analisi_Contratti/Analisi_Contratti.unity
     guid: a30fdf92c31643c4fa653ec8017900fe
   - enabled: 1
+    path: Assets/Scenes/Menu/SampleScene.unity
+    guid: 6ce84145c4bfc264f8d3b9a28b355a05
+  - enabled: 1
     path: Assets/Scenes/Analisi_Simec/SegnalazionePresenzaFotocopia.unity
     guid: 7d03144d0cc1f2447a22f9d4b075e6a4
   - enabled: 1
