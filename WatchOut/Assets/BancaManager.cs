@@ -125,6 +125,8 @@ public class BancaManager : MonoBehaviour
         {
             int soldi = PuntiDatiFilialeEconomico + PuntiMacchineEconomico + PuntiVersioneMacchineEconomico;
             int reputazione = PuntiDatiFilialeReputazione + PuntiMacchineReputazione + PuntiVersioneMacchineReputazione;
+            EndgameManager.soldi[0] = soldi;
+            EndgameManager.reputazione[0] = reputazione;
             HomeManager.controllo1 = true;
             HomeManager.soldi += soldi;
             HomeManager.reputazione += reputazione;

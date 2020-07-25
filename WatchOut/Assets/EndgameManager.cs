@@ -10,6 +10,8 @@ public class EndgameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Text t0 =(Text) GameObject.Find("Soldi1").GetComponent("Text");
+        t0.text = System.Convert.ToString(soldi[0]);
         Text t1 =(Text) GameObject.Find("Soldi2").GetComponent("Text");
         t1.text = System.Convert.ToString(soldi[1]);
         Text t2 =(Text) GameObject.Find("Soldi3").GetComponent("Text");
@@ -22,7 +24,8 @@ public class EndgameManager : MonoBehaviour
         t5.text = System.Convert.ToString(soldi[5]);
         
         
-        
+        Text s0 =(Text) GameObject.Find("Reputazione1").GetComponent("Text");
+        s0.text = System.Convert.ToString(reputazione[0]);
         Text s1 =(Text) GameObject.Find("Reputazione2").GetComponent("Text");
         s1.text = System.Convert.ToString(reputazione[1]);
         Text s2 =(Text) GameObject.Find("Reputazione3").GetComponent("Text");
