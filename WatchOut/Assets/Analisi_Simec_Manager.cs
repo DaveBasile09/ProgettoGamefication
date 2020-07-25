@@ -17,8 +17,13 @@ public class Analisi_Simec_Manager : MonoBehaviour
 
     public void indietro()
     {
-
-        ChiediOperatoreManager.indietro();
+     cl1 = false;
+     cl2 = false;
+     fotocopiaS = 0;
+     fotocopiaR = 0;
+     banconotaS = 0;
+     banconotaR = 0;
+    ChiediOperatoreManager.indietro();
     }
     public void termina()
     {

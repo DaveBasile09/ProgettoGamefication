@@ -347,6 +347,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1365402920}
     m_Modifications:
+    - target: {fileID: 209882764095890832, guid: 5de47a42a9136cd459c9828de371e21c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.20784315
+      objectReference: {fileID: 0}
+    - target: {fileID: 209882764095890832, guid: 5de47a42a9136cd459c9828de371e21c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.7058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 209882764095890832, guid: 5de47a42a9136cd459c9828de371e21c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.8000001
+      objectReference: {fileID: 0}
     - target: {fileID: 473853426124739842, guid: 5de47a42a9136cd459c9828de371e21c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -456,6 +471,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bottoni
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593539609908961091, guid: 5de47a42a9136cd459c9828de371e21c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593539609908961091, guid: 5de47a42a9136cd459c9828de371e21c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593539609908961091, guid: 5de47a42a9136cd459c9828de371e21c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.6415094
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5de47a42a9136cd459c9828de371e21c, type: 3}

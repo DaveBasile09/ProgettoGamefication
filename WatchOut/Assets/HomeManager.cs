@@ -24,6 +24,7 @@ public class HomeManager : MonoBehaviour
     public GameObject nfatto5;
     public GameObject fatto6;
     public GameObject nfatto6;
+    public GameObject popupTarm;
     public static int soldi=500;
     public static int reputazione=200;
 
@@ -82,8 +83,31 @@ public class HomeManager : MonoBehaviour
         SceneManager.LoadScene("Chiedi_operatore", LoadSceneMode.Single);
     }
     public void terminaIspezione()
+
     {
-        SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+        if (controllo1 && controllo2 && controllo3 && controllo4 && controllo5 && controllo6)
+        {
+            SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+        }
+        else
+        {
+            showTarm();
+        }
+
     }
+        
     
+    public void showTarm()
+    {
+        StartCoroutine(ShowAndHide(popupTarm, 2.5f));
+    }
+
+
+    IEnumerator ShowAndHide(GameObject go, float delay)
+    {
+        go.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        go.SetActive(false);
+    }
+
 }
