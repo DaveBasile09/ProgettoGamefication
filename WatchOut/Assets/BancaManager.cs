@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UIElements;
 using UnityEngine;
@@ -10,7 +11,9 @@ public class BancaManager : MonoBehaviour
     /* GameObject */
     public GameObject popupTarm;
     public GameObject popupBpm;
-    public GameObject popupSegnalazioni;
+    public GameObject panelTablet;
+    public GameObject panelTablet1;
+    public GameObject panelTablet2;
 
 
     /* Controllo per le segnalazioni già effettuate */
@@ -121,21 +124,40 @@ public class BancaManager : MonoBehaviour
 
     public void concludiVerifica()
     {
-        if (!(datiFiliale || macchine || versioneMacchine))
-        {
-            int soldi = PuntiDatiFilialeEconomico + PuntiMacchineEconomico + PuntiVersioneMacchineEconomico;
-            int reputazione = PuntiDatiFilialeReputazione + PuntiMacchineReputazione + PuntiVersioneMacchineReputazione;
-            EndgameManager.soldi[0] = soldi;
-            EndgameManager.reputazione[0] = reputazione;
-            HomeManager.controllo1 = true;
-            HomeManager.soldi += soldi;
-            HomeManager.reputazione += reputazione;
-            tornaAllaChecklist();
-        }
-        else
-        {
-            StartCoroutine( ShowAndHide(popupSegnalazioni, 2.5f) ); 
-        }
+        if(datiFiliale) nonSegnalareDatiFiliale();
+        if(macchine) nonSegnalareMacchine();
+        if(versioneMacchine) nonSegnalareVersioneMacchinari();
+        int soldi = PuntiDatiFilialeEconomico + PuntiMacchineEconomico + PuntiVersioneMacchineEconomico;
+        int reputazione = PuntiDatiFilialeReputazione + PuntiMacchineReputazione + PuntiVersioneMacchineReputazione;
+        EndgameManager.soldi[0] = soldi;
+        EndgameManager.reputazione[0] = reputazione;
+        HomeManager.controllo1 = true;
+        HomeManager.soldi += soldi;
+        HomeManager.reputazione += reputazione;
+        tornaAllaChecklist();
     }
 
+    private void Update()
+    {
+        if (!datiFiliale)
+        {
+            panelTablet.GetComponent<Image>().color = new Color(0,255,0,255);
+            panelTablet.transform.Find("segnalaDatiFiliale").gameObject.SetActive(false);
+            panelTablet.transform.Find("nonSegnalare").gameObject.SetActive(false);
+        }
+        
+        if (!macchine)
+        {
+            panelTablet1.GetComponent<Image>().color = new Color(0,255,0,255);
+            panelTablet1.transform.Find("segnalaMacchine").gameObject.SetActive(false);
+            panelTablet1.transform.Find("nonSegnalare").gameObject.SetActive(false);
+        }
+        
+        if (!versioneMacchine)
+        {
+            panelTablet2.GetComponent<Image>().color = new Color(0,255,0,255);
+            panelTablet2.transform.Find("segnalaVersioneMacchinari").gameObject.SetActive(false);
+            panelTablet2.transform.Find("nonSegnalare").gameObject.SetActive(false);
+        }
+    }
 }
