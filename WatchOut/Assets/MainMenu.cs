@@ -21,6 +21,8 @@ public class MainMenu : MonoBehaviour
     public GameObject difficoltà;
     public GameObject nomeFiliale;
     public GameObject nonDisp;
+    public static string v1 = "--";
+    public GameObject ban1;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +43,7 @@ public class MainMenu : MonoBehaviour
         Image i5 = filiale5.GetComponent<Image>();
 
         i5.color = new Color(0.4f, 0.4f, 0.4f, 0.5f);
-       
+        ((Text)ban1.GetComponent("Text")).text = v1;
 
     }
     public void VienieVai()

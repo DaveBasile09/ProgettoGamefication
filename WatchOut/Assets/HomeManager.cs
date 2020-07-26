@@ -85,14 +85,14 @@ public class HomeManager : MonoBehaviour
     public void terminaIspezione()
 
     {
-        if (controllo1 && controllo2 && controllo3 && controllo4 && controllo5 && controllo6)
-        {
+        //if (controllo1 && controllo2 && controllo3 && controllo4 && controllo5 && controllo6)
+        //{
             SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
-        }
-        else
-        {
-            showTarm();
-        }
+        //}
+        //else
+        //{
+         //   showTarm();
+        //}
 
     }
         
