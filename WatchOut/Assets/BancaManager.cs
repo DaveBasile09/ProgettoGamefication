@@ -14,7 +14,7 @@ public class BancaManager : MonoBehaviour
     public GameObject panelTablet;
     public GameObject panelTablet1;
     public GameObject panelTablet2;
-
+    public GameObject check1;
 
     /* Controllo per le segnalazioni già effettuate */
     public static bool datiFiliale = true;
@@ -141,21 +141,21 @@ public class BancaManager : MonoBehaviour
     {
         if (!datiFiliale)
         {
-            panelTablet.GetComponent<Image>().color = new Color(0,255,0,255);
+            check1.SetActive(true);
             panelTablet.transform.Find("segnalaDatiFiliale").gameObject.SetActive(false);
             panelTablet.transform.Find("nonSegnalare").gameObject.SetActive(false);
         }
         
         if (!macchine)
         {
-            panelTablet1.GetComponent<Image>().color = new Color(0,255,0,255);
+            GameObject.Find("check2").SetActive(true);
             panelTablet1.transform.Find("segnalaMacchine").gameObject.SetActive(false);
             panelTablet1.transform.Find("nonSegnalare").gameObject.SetActive(false);
         }
         
         if (!versioneMacchine)
         {
-            panelTablet2.GetComponent<Image>().color = new Color(0,255,0,255);
+            GameObject.Find("check3").SetActive(true);
             panelTablet2.transform.Find("segnalaVersioneMacchinari").gameObject.SetActive(false);
             panelTablet2.transform.Find("nonSegnalare").gameObject.SetActive(false);
         }
