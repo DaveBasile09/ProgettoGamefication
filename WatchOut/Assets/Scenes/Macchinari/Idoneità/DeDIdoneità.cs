@@ -20,6 +20,7 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
     private static GameObject ultimo2;
     private static GameObject ultimoLogore;
     private static GameObject ultimoBuone;
+    private static GameObject spunta;
 
 
     public void OnTriggerEnter2D(Collider2D other)
