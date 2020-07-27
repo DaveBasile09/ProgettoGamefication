@@ -15,6 +15,8 @@ public class BancaManager : MonoBehaviour
     public GameObject panelTablet1;
     public GameObject panelTablet2;
     public GameObject check1;
+    public GameObject check2;
+    public GameObject check3;
 
     /* Controllo per le segnalazioni già effettuate */
     public static bool datiFiliale = true;
@@ -148,14 +150,14 @@ public class BancaManager : MonoBehaviour
         
         if (!macchine)
         {
-            GameObject.Find("check2").SetActive(true);
+            check2.SetActive(true);
             panelTablet1.transform.Find("segnalaMacchine").gameObject.SetActive(false);
             panelTablet1.transform.Find("nonSegnalare").gameObject.SetActive(false);
         }
         
         if (!versioneMacchine)
         {
-            GameObject.Find("check3").SetActive(true);
+            check3.SetActive(true);
             panelTablet2.transform.Find("segnalaVersioneMacchinari").gameObject.SetActive(false);
             panelTablet2.transform.Find("nonSegnalare").gameObject.SetActive(false);
         }

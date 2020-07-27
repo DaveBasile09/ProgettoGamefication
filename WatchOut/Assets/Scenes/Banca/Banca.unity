@@ -3288,6 +3288,8 @@ MonoBehaviour:
   panelTablet1: {fileID: 752659216}
   panelTablet2: {fileID: 1254326073}
   check1: {fileID: 685930691}
+  check2: {fileID: 1182769465}
+  check3: {fileID: 919885035}
 --- !u!4 &1148172382
 Transform:
   m_ObjectHideFlags: 0
