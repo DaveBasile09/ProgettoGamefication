@@ -369,7 +369,10 @@ public class cambiascenaIdoneita : MonoBehaviour
     }
     
     
-    
+    public void tornaCeck()
+    {
+        SceneManager.LoadScene("HomeBanca", LoadSceneMode.Single);
+    }
     
     
     

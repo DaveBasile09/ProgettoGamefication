@@ -134,6 +134,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1299764172}
     m_Modifications:
+    - target: {fileID: 1690311777707846118, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1441533215}
+    - target: {fileID: 1690311777707846118, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: tornaCeck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690311777707846118, guid: 54d33ac890c0bf1468083b2238ae7b1a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2990804349745603304, guid: 54d33ac890c0bf1468083b2238ae7b1a,
         type: 3}
       propertyPath: m_Name
