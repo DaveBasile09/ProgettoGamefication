@@ -264,8 +264,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+      objectReference: {fileID: 12800000, guid: e42381b1c07545743bff90735f5713db,
         type: 3}
+    - target: {fileID: 3940921192985693899, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: NonSegnalare4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4737608649450632733, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: check4
+      objectReference: {fileID: 0}
     - target: {fileID: 7000065059502188457, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -291,15 +301,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: VassoioD
       objectReference: {fileID: 0}
+    - target: {fileID: 7055899264052231822, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Segnala4
+      objectReference: {fileID: 0}
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -14
+      value: -7.2189
       objectReference: {fileID: 0}
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -152
+      value: -160.8
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
@@ -897,8 +912,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+      objectReference: {fileID: 12800000, guid: e42381b1c07545743bff90735f5713db,
         type: 3}
+    - target: {fileID: 3940921192985693899, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: NonSegnalare2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4737608649450632733, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: check2
+      objectReference: {fileID: 0}
     - target: {fileID: 7000065059502188457, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -924,15 +949,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: VassoioB
       objectReference: {fileID: 0}
+    - target: {fileID: 7055899264052231822, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Segnala2
+      objectReference: {fileID: 0}
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -14
+      value: -4.7328
       objectReference: {fileID: 0}
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -154
+      value: -166.3
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
@@ -1718,8 +1748,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -129, y: -3.9952}
-  m_SizeDelta: {x: 327.3261, y: 53.971313}
+  m_AnchoredPosition: {x: -106.6, y: -11}
+  m_SizeDelta: {x: 372.0738, y: 83.15457}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879304983
 MonoBehaviour:
@@ -1741,7 +1771,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874, type: 3}
+    m_Font: {fileID: 12800000, guid: e42381b1c07545743bff90735f5713db, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1753,7 +1783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'test autenticita''
+  m_Text: 'Test autenticita''
 
 '
 --- !u!222 &879304984
@@ -2599,8 +2629,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+      objectReference: {fileID: 12800000, guid: e42381b1c07545743bff90735f5713db,
         type: 3}
+    - target: {fileID: 3940921192985693899, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: NonSegnalare3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4737608649450632733, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: check3
+      objectReference: {fileID: 0}
     - target: {fileID: 7000065059502188457, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2626,6 +2666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VassoioC
       objectReference: {fileID: 0}
+    - target: {fileID: 7055899264052231822, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Segnala3
+      objectReference: {fileID: 0}
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2634,7 +2679,7 @@ PrefabInstance:
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -154
+      value: -162.8
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
@@ -3990,8 +4035,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 5290772a083a8e540a73ec8eba279874,
+      objectReference: {fileID: 12800000, guid: e42381b1c07545743bff90735f5713db,
         type: 3}
+    - target: {fileID: 3940921192985693899, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: NonSegnalare1
+      objectReference: {fileID: 0}
     - target: {fileID: 7000065059502188457, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4017,15 +4067,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: VassoioA
       objectReference: {fileID: 0}
+    - target: {fileID: 7055899264052231822, guid: a1416046548073c4ab19828cafa4b9f6,
+        type: 3}
+      propertyPath: m_Name
+      value: Segnala1
+      objectReference: {fileID: 0}
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: -10.6
       objectReference: {fileID: 0}
     - target: {fileID: 8125343787842483256, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -152
+      value: -166.9
       objectReference: {fileID: 0}
     - target: {fileID: 8182087977388210180, guid: a1416046548073c4ab19828cafa4b9f6,
         type: 3}

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class SegnalaAut : MonoBehaviour
 {
     public static HashSet<int> scelteAut=new HashSet<int>() ;
-
+    
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class SegnalaAut : MonoBehaviour
         GameObject.Find("100").SetActive(DragAndDrop.v2);
         GameObject.Find("500F").SetActive(DragAndDrop.v3);
         GameObject.Find("100F").SetActive(DragAndDrop.v4);
-        
+
         
         scelteAut.Clear();
     }
