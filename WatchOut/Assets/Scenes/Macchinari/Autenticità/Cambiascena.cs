@@ -366,6 +366,13 @@ public class Cambiascena : MonoBehaviour
         SceneManager.LoadScene("scelta", LoadSceneMode.Single);
 
     }
+
+
+
+    public void tornaCeck()
+    {
+        SceneManager.LoadScene("HomeBanca", LoadSceneMode.Single);
+    }
     
     
     
