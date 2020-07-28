@@ -12,6 +12,12 @@ public GameObject tablet;
 public GameObject check1;
 public GameObject check2;
 public GameObject check3;
+public GameObject segnala1;
+public GameObject segnala2;
+public GameObject segnala3;
+public GameObject nonSegnala1;
+public GameObject nonSegnala2;
+public GameObject nonSegnala3;
 
     public static bool cl1 = false;
     public static bool cl2 = false;
@@ -30,19 +36,23 @@ public GameObject check3;
     cl2 = false;
     cl3 = false;
     presenzaNormativaS = 0;
-     presenzaNormativaR = 0;
+    presenzaNormativaR = 0;
+    
     normativaBancomatS = 0;
+    normativaBancomatR = 0;
+    
+    normativaBanconoteS = 0;
     normativaBanconoteR = 0;
-     normativaBancomatR = 0;
-     normativaBanconoteS = 0;
     ChiediOperatoreManager.indietro();
     }
     public void termina()
     {
         ChiediOperatoreManager.c3 = true;
         HomeManager.controllo5 = true;
-        if (!cl1) { presenzaNormativaS += 0; presenzaNormativaR += 20;}
-        if (!cl2) { normativaBancomatS += 0; normativaBancomatR += 20;}
+        if (!cl1) { nonSegnalareClausola1();}
+        if (!cl2) { nonSegnalareClausola2();}
+        if (!cl3) { nonSegnalareClausola3();}
+        
         HomeManager.soldi += presenzaNormativaS + normativaBancomatS + normativaBanconoteS;
         EndgameManager.soldi[4] = presenzaNormativaS + normativaBancomatS + normativaBanconoteS;
         HomeManager.reputazione += presenzaNormativaR + normativaBancomatR + normativaBanconoteR;
@@ -57,6 +67,14 @@ public GameObject check3;
             SceneManager.LoadScene("Check_istruzioni_macchine", LoadSceneMode.Single);
         }
     }
+    
+    public void nonSegnalareClausola1()
+    {
+        cl1 = true;
+        presenzaNormativaS += 0;
+        presenzaNormativaR += 20;
+    }
+    
     public void clausola2()
     {
         if (!cl2)
@@ -65,6 +83,13 @@ public GameObject check3;
         }
 
     }
+    public void nonSegnalareClausola2()
+    {
+        cl2 = true;
+        normativaBancomatS += 0; 
+        normativaBancomatR += 20;
+    }
+    
     public void clausola3()
     {
         if (!cl3)
@@ -73,6 +98,13 @@ public GameObject check3;
         }
 
     }
+    public void nonSegnalareClausola3()
+    {
+        cl3 = true;
+        normativaBanconoteS -= 10; 
+        normativaBanconoteR -= 20;
+    }
+    
     private void Start()
     {
 
@@ -85,24 +117,24 @@ public GameObject check3;
     public void Update()
     {
         if (cl1)
-        { 
+        {
             check1.SetActive(true);
-            GameObject.Find("Segnala1").SetActive(false);
-            GameObject.Find("NonSegnala1").SetActive(false);
+            segnala1.gameObject.SetActive(false);
+            nonSegnala1.gameObject.SetActive(false);
         }
         
         if (cl2)
         { 
             check2.SetActive(true);
-            GameObject.Find("Segnala2").SetActive(false);
-            GameObject.Find("NonSegnala2").SetActive(false);
+            segnala2.gameObject.SetActive(false);
+            nonSegnala2.gameObject.SetActive(false);
         }
         
         if (cl3)
         { 
             check3.SetActive(true);
-            GameObject.Find("Segnala3").SetActive(false);
-            GameObject.Find("NonSegnala3").SetActive(false);
+            segnala3.gameObject.SetActive(false);
+            nonSegnala3.gameObject.SetActive(false);
         }
     }
 }

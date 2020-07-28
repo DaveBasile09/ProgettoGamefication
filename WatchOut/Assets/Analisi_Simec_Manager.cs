@@ -8,6 +8,11 @@ public class Analisi_Simec_Manager : MonoBehaviour
 {
     public GameObject check1;
     public GameObject check2;
+    public GameObject segnala1;
+    public GameObject segnala2;
+    public GameObject nonSegnala1;
+    public GameObject nonSegnala2;
+    
 
     public static bool cl1 = false;
     public static bool cl2 = false;
@@ -33,8 +38,8 @@ public class Analisi_Simec_Manager : MonoBehaviour
 
         ChiediOperatoreManager.c2 = true;
         HomeManager.controllo4 = true;
-        if(!cl1) { banconotaS += 0;banconotaR += 15; }
-        if (!cl2) { fotocopiaS += -20; fotocopiaR += -40; }
+        if(!cl1) { nonSegnalareClausola1(); }
+        if (!cl2) { nonSegnalareClausola2(); }
         HomeManager.soldi += fotocopiaS + banconotaS;
         HomeManager.reputazione+= fotocopiaR + banconotaR;
         EndgameManager.soldi[3]= fotocopiaS + banconotaS;
@@ -48,6 +53,13 @@ public class Analisi_Simec_Manager : MonoBehaviour
             SceneManager.LoadScene("SegnalazionePresenzaFotocopia", LoadSceneMode.Single);
         }
     }
+    
+    public void nonSegnalareClausola1()
+    {
+        cl1 = true;
+        banconotaS += 0;
+        banconotaR += 15;
+    }
     public void clausola2()
     {
         if (!cl2)
@@ -55,6 +67,13 @@ public class Analisi_Simec_Manager : MonoBehaviour
             SceneManager.LoadScene("SegnalazionePresenzaDocumento", LoadSceneMode.Single);
         }
 
+    }
+    
+    public void nonSegnalareClausola2()
+    {
+        cl2 = true;
+        fotocopiaS += -20;
+        fotocopiaR += -40;
     }
     private void Start()
     {
@@ -70,15 +89,15 @@ public class Analisi_Simec_Manager : MonoBehaviour
         if (cl1)
         {
             check1.SetActive(true);
-            GameObject.Find("Segnala1").SetActive(false);
-            GameObject.Find("NonSegnala1").SetActive(false);
+            segnala1.gameObject.SetActive(false);
+            nonSegnala1.gameObject.SetActive(false);
         }
-
+        
         if (cl2)
-        {
+        { 
             check2.SetActive(true);
-            GameObject.Find("Segnala2").SetActive(false);
-            GameObject.Find("NonSegnala2").SetActive(false);
+            segnala2.gameObject.SetActive(false);
+            nonSegnala2.gameObject.SetActive(false);
         }
     }
 }

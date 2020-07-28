@@ -9,7 +9,14 @@ public class AnalisiContrattiManager : MonoBehaviour
     public GameObject check1;
     public GameObject check2;
     public GameObject check3;
+    public GameObject segnala1;
+    public GameObject segnala2;
+    public GameObject segnala3;
+    public GameObject nonSegnala1;
+    public GameObject nonSegnala2;
+    public GameObject nonSegnala3;
     
+
     
     public static bool cl1=false;
     public static bool cl2=false;
@@ -40,9 +47,9 @@ public class AnalisiContrattiManager : MonoBehaviour
 
 
     {
-        if (!cl1) { cl1S += 0;cl1R += 10; }
-        if (!cl2) { cl2S += -40; cl2R += -60; }
-        if (!cl3) { cl3S += 0; cl3R += 10; }
+        if (!cl1) { nonSegnalareClausola1(); }
+        if (!cl2) { nonSegnalareClausola2(); }
+        if (!cl3) { nonSegnalareClausola3(); }
 
 
         ChiediOperatoreManager.c1 = true;
@@ -60,6 +67,13 @@ public class AnalisiContrattiManager : MonoBehaviour
             SceneManager.LoadScene("SegnalazionePresenzaClausola1", LoadSceneMode.Single);
         }
     }
+
+    public void nonSegnalareClausola1()
+    {
+        cl1 = true;
+        cl1S += 0;
+        cl1R += 10;
+    }
     public void clausola2()
     {
         if (!cl2)
@@ -67,6 +81,13 @@ public class AnalisiContrattiManager : MonoBehaviour
             SceneManager.LoadScene("SegnalazionePresenzaClausola2", LoadSceneMode.Single);
         }
 
+    }
+
+    public void nonSegnalareClausola2()
+    {
+        cl2 = true;
+        cl2S += -40; 
+        cl2R += -60;
     }
     public void clausola3()
     {
@@ -76,6 +97,15 @@ public class AnalisiContrattiManager : MonoBehaviour
         }
 
     }
+
+    public void nonSegnalareClausola3()
+    {
+        cl3 = true;
+        cl3S += 0; 
+        cl3R += 10;
+    }
+    
+    
     private void Start()
     {
 
@@ -88,24 +118,24 @@ public class AnalisiContrattiManager : MonoBehaviour
     public void Update()
     {
         if (cl1)
-        { 
+        {
             check1.SetActive(true);
-            GameObject.Find("Segnala1").SetActive(false);
-            GameObject.Find("NonSegnala1").SetActive(false);
+            segnala1.gameObject.SetActive(false);
+            nonSegnala1.gameObject.SetActive(false);
         }
         
         if (cl2)
         { 
             check2.SetActive(true);
-            GameObject.Find("Segnala2").SetActive(false);
-            GameObject.Find("NonSegnala2").SetActive(false);
+            segnala2.gameObject.SetActive(false);
+            nonSegnala2.gameObject.SetActive(false);
         }
         
         if (cl3)
         { 
             check3.SetActive(true);
-            GameObject.Find("Segnala3").SetActive(false);
-            GameObject.Find("NonSegnala3").SetActive(false);
+            segnala3.gameObject.SetActive(false);
+            nonSegnala3.gameObject.SetActive(false);
         }
     }
 }
