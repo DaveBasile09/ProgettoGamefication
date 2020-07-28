@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,7 +7,11 @@ using UnityEngine.UI;
 
 public class ChiediOperatoreManager : MonoBehaviour
 
-{   
+{
+    public GameObject check1;
+    public GameObject check2;
+    public GameObject check3;
+    
     public static bool c1 =false;
     public static bool c2=false;
     public static bool c3=false;
@@ -51,5 +56,26 @@ public class ChiediOperatoreManager : MonoBehaviour
     public void tornaCheck()
     {
         SceneManager.LoadScene("HomeBanca", LoadSceneMode.Single);
+    }
+
+    public void Update()
+    {
+        if (c1)
+        {
+            GameObject.Find("Avvia1").SetActive(false);
+            check1.SetActive(true);
+        }
+        
+        if (c2)
+        {
+            GameObject.Find("Avvia2").SetActive(false);
+            check2.SetActive(true);
+        }
+        
+        if (c3)
+        {
+            GameObject.Find("Avvia3").SetActive(false);
+            check3.SetActive(true);
+        }
     }
 }

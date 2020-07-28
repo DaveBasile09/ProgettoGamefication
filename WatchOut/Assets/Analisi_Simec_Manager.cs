@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class Analisi_Simec_Manager : MonoBehaviour
 {
+    public GameObject check1;
+    public GameObject check2;
+
     public static bool cl1 = false;
     public static bool cl2 = false;
     public static int fotocopiaS=0;
@@ -62,4 +65,20 @@ public class Analisi_Simec_Manager : MonoBehaviour
         t2.text = System.Convert.ToString(HomeManager.reputazione);
     }
 
+    public void Update()
+    {
+        if (cl1)
+        {
+            check1.SetActive(true);
+            GameObject.Find("Segnala1").SetActive(false);
+            GameObject.Find("NonSegnala1").SetActive(false);
+        }
+
+        if (cl2)
+        {
+            check2.SetActive(true);
+            GameObject.Find("Segnala2").SetActive(false);
+            GameObject.Find("NonSegnala2").SetActive(false);
+        }
+    }
 }

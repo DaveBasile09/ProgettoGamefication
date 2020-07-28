@@ -9,6 +9,10 @@ public class AnalisiNormativa : MonoBehaviour
    
 {
 public GameObject tablet;
+public GameObject check1;
+public GameObject check2;
+public GameObject check3;
+
     public static bool cl1 = false;
     public static bool cl2 = false;
     public static bool cl3 = false;
@@ -76,5 +80,29 @@ public GameObject tablet;
         Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
         t1.text = System.Convert.ToString(HomeManager.soldi);
         t2.text = System.Convert.ToString(HomeManager.reputazione);
+    }
+    
+    public void Update()
+    {
+        if (cl1)
+        { 
+            check1.SetActive(true);
+            GameObject.Find("Segnala1").SetActive(false);
+            GameObject.Find("NonSegnala1").SetActive(false);
+        }
+        
+        if (cl2)
+        { 
+            check2.SetActive(true);
+            GameObject.Find("Segnala2").SetActive(false);
+            GameObject.Find("NonSegnala2").SetActive(false);
+        }
+        
+        if (cl3)
+        { 
+            check3.SetActive(true);
+            GameObject.Find("Segnala3").SetActive(false);
+            GameObject.Find("NonSegnala3").SetActive(false);
+        }
     }
 }
