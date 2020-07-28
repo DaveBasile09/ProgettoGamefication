@@ -16,6 +16,33 @@ public class Cambiascena : MonoBehaviour
     public static Dictionary<string, HashSet<int>> risAut = new Dictionary<string, HashSet<int>>();
     private  int parzialeSoldi=0;
     private  int parzialeReputazione=0;
+    private GameObject check1;
+    private GameObject check2;
+    private GameObject check3;
+    private GameObject check4;
+
+
+    void Start()
+    {
+        check1 = GameObject.Find("check1");
+        check1.SetActive(false); 
+        check2 = GameObject.Find("check2");
+        check2.SetActive(false); 
+        check3 = GameObject.Find("check3");
+        check3.SetActive(false);
+        check4 = GameObject.Find("check4");
+        check4.SetActive(false);
+
+        if (A)
+            togliA();
+        if (B)
+            togliB();
+        if (C)
+            togliC();
+        if (D)
+            togliD();
+        
+    }
 
     public void segnalaVassoioA()
     {
@@ -34,8 +61,16 @@ public class Cambiascena : MonoBehaviour
             A = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risAut.Add(ultimo, temp);
+            togliA();
         }
         
+    }
+
+    private void togliA()
+    {
+        GameObject.Find("Segnala1").SetActive(false);
+        GameObject.Find("NonSegnalare1").SetActive(false);
+        check1.SetActive(true);
     }
     
     public void segnalaVassoioB()
@@ -55,8 +90,16 @@ public class Cambiascena : MonoBehaviour
             B = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risAut.Add(ultimo, temp);
+            togliB();
         }
         
+    }
+    
+    private void togliB()
+    {
+        GameObject.Find("Segnala2").SetActive(false);
+        GameObject.Find("NonSegnalare2").SetActive(false);
+        check2.SetActive(true);
     }
     
     public void segnalaVassoioC()
@@ -76,9 +119,17 @@ public class Cambiascena : MonoBehaviour
             C = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risAut.Add(ultimo, temp);
+            togliC();
         }
         
     }
+    private void togliC()
+    {
+        GameObject.Find("Segnala3").SetActive(false);
+        GameObject.Find("NonSegnalare3").SetActive(false);
+        check3.SetActive(true);
+    }
+    
     
     public void segnalaVassoioD()
     {
@@ -97,9 +148,18 @@ public class Cambiascena : MonoBehaviour
             D = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risAut.Add(ultimo, temp);
+            togliD();
         }
-        
     }
+    
+    private void togliD()
+    {
+        GameObject.Find("Segnala4").SetActive(false);
+        GameObject.Find("NonSegnalare4").SetActive(false);
+        check4.SetActive(true);
+    }
+    
+    
     
     public void TornaIndietro()
     {

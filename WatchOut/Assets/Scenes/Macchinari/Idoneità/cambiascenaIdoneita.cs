@@ -1,8 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO.Compression;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class cambiascenaIdoneita : MonoBehaviour
 {
@@ -15,7 +18,36 @@ public class cambiascenaIdoneita : MonoBehaviour
     public static Dictionary<string, HashSet<int>> risIdo = new Dictionary<string, HashSet<int>>();
     private  int parzialeSoldi=0;
     private  int parzialeReputazione=0;
-    
+    private GameObject c1;
+    private GameObject c2;
+    private GameObject c3;
+    private GameObject c4;
+
+
+    void Start()
+    {
+        c1= GameObject.Find("check1");
+        c1.SetActive(false);
+        c2= GameObject.Find("check2");
+        c2.SetActive(false);
+        c3= GameObject.Find("check3");
+        c3.SetActive(false);
+        c4= GameObject.Find("check4");
+        c4.SetActive(false);
+        
+        if (A)
+            togliA();
+        if (B)
+            togliB();
+        if (C)
+            togliC();
+        if (D)
+            togliD();
+
+    }
+
+   
+
     public void segnalaVassoioA()
     {
         if (!A)
@@ -23,8 +55,8 @@ public class cambiascenaIdoneita : MonoBehaviour
             ultimo = "A";
             SceneManager.LoadScene("SegnalazioneIdoneità", LoadSceneMode.Single);
         }
-        
     }
+    
     public void nonsegnalaA()
     {
         if (!A)
@@ -33,8 +65,15 @@ public class cambiascenaIdoneita : MonoBehaviour
             A = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risIdo.Add(ultimo, temp);
+            togliA();
         }
-        
+    }
+
+    private void togliA()
+    {
+        GameObject.Find("Segnala1").SetActive(false);
+        GameObject.Find("NonSegnalare1").SetActive(false);
+        c1.SetActive(true);
     }
     
     public void segnalaVassoioB()
@@ -54,8 +93,16 @@ public class cambiascenaIdoneita : MonoBehaviour
             B = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risIdo.Add(ultimo, temp);
+            togliB();
         }
         
+    }
+
+    private void togliB()
+    {
+        GameObject.Find("Segnala2").SetActive(false);
+        GameObject.Find("NonSegnalare2").SetActive(false);
+        c2.SetActive(true);
     }
     
     public void segnalaVassoioC()
@@ -75,8 +122,16 @@ public class cambiascenaIdoneita : MonoBehaviour
             C = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risIdo.Add(ultimo, temp);
+            togliC();
         }
         
+    }
+
+    private void togliC()
+    {
+        GameObject.Find("Segnala3").SetActive(false);
+        GameObject.Find("NonSegnalare3").SetActive(false);
+        c3.SetActive(true);
     }
     
     public void segnalaVassoioD()
@@ -96,8 +151,16 @@ public class cambiascenaIdoneita : MonoBehaviour
             D = true;
             HashSet<int> temp= new HashSet<int>(){-1};
             risIdo.Add(ultimo, temp);
+            togliD();
         }
         
+    }
+
+    private void togliD()
+    {
+        GameObject.Find("Segnala4").SetActive(false);
+        GameObject.Find("NonSegnalare4").SetActive(false);
+        c4.SetActive(true);
     }
     
     /*
@@ -142,11 +205,10 @@ public class cambiascenaIdoneita : MonoBehaviour
         }
         else
         { 
-            Debug.Log("ultimo --->"+ultimo);
             risIdo.Add(ultimo, new HashSet<int>());
             foreach (var p in SegnalaIdo.scelteId)
             {
-                Debug.Log("p --> "+p);
+
                 risIdo[ultimo].Add(p);
             }
         }
@@ -296,14 +358,7 @@ public class cambiascenaIdoneita : MonoBehaviour
             }
         }
 
-        foreach (var x in risIdo)
-        {
-            Debug.Log(x.Key);
-            foreach (var y in x.Value)
-            {
-                Debug.Log(y);
-            }
-        }
+       
         CalcolaPunteggio();
         HomeManager.controllo2 = true;
         cambiascena.Ido = true;

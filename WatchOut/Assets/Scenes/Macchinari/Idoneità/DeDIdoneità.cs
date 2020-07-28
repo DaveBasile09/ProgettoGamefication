@@ -20,7 +20,9 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
     private static GameObject ultimo2;
     private static GameObject ultimoLogore;
     private static GameObject ultimoBuone;
-    private static GameObject spunta;
+    public static bool v1=true;
+    public static bool v2=true;
+    
 
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -38,6 +40,7 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
                 ultimoBuone.SetActive(false);
                 ultimoLogore.SetActive(false);
             }
+            Disa(gameObject);
             mezza1.SetActive(true);
             mezza2.SetActive(true);
             percBuone.SetActive(true);
@@ -53,7 +56,18 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
         }
     }
 
-    
+    void Disa(GameObject b)
+    {
+        switch (b.transform.name)
+        {
+            case "500": v1 = false;
+                break;
+            case "100": v2 = false;
+                break;
+           }
+        
+        
+    }
 
     void Start()
     {
@@ -67,6 +81,9 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
         mezza2.SetActive(false);
         percBuone.SetActive(false);
         percLogore.SetActive(false);
+        
+        GameObject.Find("500").SetActive(DeDIdoneità.v1);
+        GameObject.Find("100").SetActive(DeDIdoneità.v2);
        
     }
 
