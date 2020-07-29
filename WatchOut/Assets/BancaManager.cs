@@ -163,4 +163,14 @@ public class BancaManager : MonoBehaviour
             panelTablet2.transform.Find("nonSegnalare").gameObject.SetActive(false);
         }
     }
+
+    public static void reset()
+    {
+        PuntiMacchineEconomico = 0;
+        PuntiMacchineReputazione = 0;
+        PuntiDatiFilialeEconomico = 0;
+        PuntiDatiFilialeReputazione = 0;
+        PuntiVersioneMacchineEconomico = 0;
+        PuntiVersioneMacchineReputazione = 0;
+    }
 }

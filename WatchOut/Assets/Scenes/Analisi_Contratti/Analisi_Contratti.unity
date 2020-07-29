@@ -2385,8 +2385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -0.000038445}
-  m_SizeDelta: {x: 251.51202, y: 61.117897}
+  m_AnchoredPosition: {x: 17, y: 1.6}
+  m_SizeDelta: {x: 329.03998, y: 57.820717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1567637234
 MonoBehaviour:
@@ -2420,7 +2420,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Analisi Contratti
+  m_Text: ANALISI CONTRATTI
 --- !u!222 &1567637235
 CanvasRenderer:
   m_ObjectHideFlags: 0
