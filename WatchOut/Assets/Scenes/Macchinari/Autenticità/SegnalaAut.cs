@@ -8,6 +8,11 @@ using UnityEngine.UI;
 public class SegnalaAut : MonoBehaviour
 {
     public static HashSet<int> scelteAut=new HashSet<int>() ;
+
+    public static void reset()
+    {
+        scelteAut=new HashSet<int>();
+    }
     
 
     void Start()
