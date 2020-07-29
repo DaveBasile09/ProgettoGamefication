@@ -17,6 +17,7 @@ public class ChiediOperatoreManager : MonoBehaviour
     public static bool c3=false;
     private void Start()
     {
+        if (HomeManager.soldi <= 0 || HomeManager.reputazione <= 0) { EndgameManager.gameOver = true;SceneManager.LoadScene("Endgame", LoadSceneMode.Single); }
         Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");
         Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
         t1.text = System.Convert.ToString(HomeManager.soldi);

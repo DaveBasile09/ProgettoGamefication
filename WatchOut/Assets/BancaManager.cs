@@ -39,6 +39,7 @@ public class BancaManager : MonoBehaviour
         Text t2 = (Text)GameObject.Find("reputazione").GetComponent("Text");
         t1.text = System.Convert.ToString(HomeManager.soldi);
         t2.text = System.Convert.ToString(HomeManager.reputazione);
+        if (HomeManager.soldi <= 0 || HomeManager.reputazione <= 0) { EndgameManager.gameOver = true; SceneManager.LoadScene("Endgame", LoadSceneMode.Single); }
     }
 
 

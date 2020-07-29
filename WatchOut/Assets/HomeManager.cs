@@ -25,13 +25,15 @@ public class HomeManager : MonoBehaviour
     public GameObject fatto6;
     public GameObject nfatto6;
     public GameObject popupTarm;
+    public GameObject popup;
+
     public static int soldi=500;
     public static int reputazione=200;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        if (HomeManager.soldi <= 0 || HomeManager.reputazione <= 0) { EndgameManager.gameOver = true; SceneManager.LoadScene("Endgame", LoadSceneMode.Single); }
         if (controllo6)
         {
             fatto6.SetActive(true);
@@ -84,16 +86,8 @@ public class HomeManager : MonoBehaviour
     }
     public void terminaIspezione()
 
-    {
-        //if (controllo1 && controllo2 && controllo3 && controllo4 && controllo5 && controllo6)
-        //{
-            SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
-        //}
-        //else
-        //{
-         //   showTarm();
-        //}
-
+    {   if (controllo1 && controllo2 && controllo3 && controllo4 && controllo5) { popup.SetActive(true); }
+        else showTarm();
     }
         
     
@@ -109,5 +103,27 @@ public class HomeManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         go.SetActive(false);
     }
+
+    public void a()
+    {
+        EndgameManager.v = "A";
+        SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+    }
+    public void b()
+    {
+        EndgameManager.v = "B";
+        SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+    }
+    public void c()
+    {
+        EndgameManager.v = "C";
+        SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+    }
+    public void d()
+    {
+        EndgameManager.v = "D";
+        SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
+    }
+
 
 }

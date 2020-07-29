@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -21,8 +22,10 @@ public class MainMenu : MonoBehaviour
     public GameObject difficoltà;
     public GameObject nomeFiliale;
     public GameObject nonDisp;
-    public static string v1 = "--";
+    public static string v1 = "0";
     public GameObject ban1;
+    public GameObject forzaNapoli;
+    public static bool b1 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +47,14 @@ public class MainMenu : MonoBehaviour
 
         i5.color = new Color(0.4f, 0.4f, 0.4f, 0.5f);
         ((Text)ban1.GetComponent("Text")).text = v1;
+        ((Text)GameObject.Find("p").GetComponent("Text")).text = v1;
+        if (b1)
+        {
+           
+            ((Text)GameObject.Find("Valorecompletamento").GetComponent("Text")).text = "1/6";
+            forzaNapoli.SetActive(true);
 
+        }
     }
     public void VienieVai()
     {
@@ -70,5 +80,9 @@ public class MainMenu : MonoBehaviour
         difficoltà.SetActive(true);
         nonDisp.SetActive(false);
 
+    }
+    public void Avvia()
+    {
+        SceneManager.LoadScene("HomeBanca", LoadSceneMode.Single);
     }
 }
