@@ -24,6 +24,15 @@ public class cambiascenaIdoneita : MonoBehaviour
     private GameObject c4;
 
 
+    public static void reset()
+    {
+        A=false;
+        B=false;
+        C=false;
+        D=false;
+        ultimo = null;
+        risIdo=new Dictionary<string, HashSet<int>>();
+    }
     void Start()
     {
         c1= GameObject.Find("check1");
