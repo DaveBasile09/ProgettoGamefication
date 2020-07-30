@@ -97,6 +97,15 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         transform.position=new Vector3(x,y,0);
     }
+    public static void reset()
+    {
+            GameObject ultimo1;
+    GameObject ultimo2;
+     GameObject ultimoLogore;
+    GameObject ultimoBuone;
+    v1 = true;
+    v2 = true;
+}
     
     
     

@@ -138,4 +138,17 @@ public class AnalisiContrattiManager : MonoBehaviour
             nonSegnala3.gameObject.SetActive(false);
         }
     }
+    public static void reset()
+    {
+        cl1 = false;
+        cl2 = false;
+        cl3 = false;
+
+        cl1S = 0;
+        cl1R = 0;
+        cl2S = 0;
+        cl2R = 0;
+        cl3S = 0;
+        cl3R = 0;
+    }
 }

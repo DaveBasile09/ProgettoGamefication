@@ -18,14 +18,14 @@ public class MainMenu : MonoBehaviour
         public GameObject filiale6;
         public GameObject tablet;
         public GameObject avvia;
-    public GameObject locazione;
-    public GameObject difficoltà;
-    public GameObject nomeFiliale;
-    public GameObject nonDisp;
-    public static string v1 = "0";
-    public GameObject ban1;
-    public GameObject forzaNapoli;
-    public static bool b1 = false;
+        public GameObject locazione;
+        public GameObject difficoltà;
+        public GameObject nomeFiliale;
+        public GameObject nonDisp;
+        public static string v1 = "0";
+        public GameObject ban1;
+        public GameObject forzaNapoli;
+        public static bool b1 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +83,24 @@ public class MainMenu : MonoBehaviour
     }
     public void Avvia()
     {
+        prepare();
         SceneManager.LoadScene("HomeBanca", LoadSceneMode.Single);
+    }
+
+    public void prepare()
+    {
+        HomeManager.reset();
+        Analisi_Simec_Manager.reset();
+        AnalisiNormativa.reset();
+        AnalisiContrattiManager.reset();
+        BancaManager.reset();
+        ChiediOperatoreManager.reset();
+        cambiascena.reset();
+        cambiascenaIdoneita.reset();
+        Cambiascena.reset();
+        DragAndDrop.reset();
+        DeDIdoneità.reset();
+        SegnalaIdo.reset();
+        SegnalaAut.reset();
     }
 }

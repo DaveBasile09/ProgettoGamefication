@@ -12,8 +12,6 @@ public class Analisi_Simec_Manager : MonoBehaviour
     public GameObject segnala2;
     public GameObject nonSegnala1;
     public GameObject nonSegnala2;
-    
-
     public static bool cl1 = false;
     public static bool cl2 = false;
     public static int fotocopiaS=0;
@@ -99,5 +97,14 @@ public class Analisi_Simec_Manager : MonoBehaviour
             segnala2.gameObject.SetActive(false);
             nonSegnala2.gameObject.SetActive(false);
         }
+    }
+    public static void reset()
+    {
+        cl1 = false;
+        cl2 = false;
+        fotocopiaS = 0;
+        fotocopiaR = 0;
+        banconotaS = 0;
+        banconotaR = 0;
     }
 }

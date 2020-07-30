@@ -21,7 +21,15 @@ public class Cambiascena : MonoBehaviour
     private GameObject check3;
     private GameObject check4;
 
-
+    public static void reset()
+    {
+     A = false;
+     B = false;
+     C = false;
+     D = false;
+     ultimo="";
+        risAut = new Dictionary<string, HashSet<int>>();
+    }
     void Start()
     {
         check1 = GameObject.Find("check1");

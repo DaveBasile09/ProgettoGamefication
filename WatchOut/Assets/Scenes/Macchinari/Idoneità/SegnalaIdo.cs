@@ -58,6 +58,12 @@ public class SegnalaIdo : MonoBehaviour
        
     }
 
+    public static void reset()
+    {
+        scelteId = new HashSet<int>();
+    }
+   
+
   
 
        

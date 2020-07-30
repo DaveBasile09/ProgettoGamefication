@@ -124,6 +124,17 @@ public class HomeManager : MonoBehaviour
         EndgameManager.v = "D";
         SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
     }
+    public static void reset()
+    {
+    controllo1 = false;
+    controllo2 = false;
+    controllo3 = false;
+    controllo4 = false;
+    controllo5 = false;
+    controllo6 = false;
+    soldi = 500;
+    reputazione = 200;
+}
 
 
 }

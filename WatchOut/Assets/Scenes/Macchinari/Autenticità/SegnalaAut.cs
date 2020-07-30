@@ -64,6 +64,10 @@ public class SegnalaAut : MonoBehaviour
             t.text = "X";
         }
     }
+    public static void reset()
+    {
+        scelteAut = new HashSet<int>();
+    }
 
    
 }
