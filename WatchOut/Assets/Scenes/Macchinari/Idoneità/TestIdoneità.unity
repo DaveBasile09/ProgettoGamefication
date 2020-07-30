@@ -1238,7 +1238,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'test ideoneitia''
+  m_Text: 'TEST IDONEITA''
 
 '
 --- !u!222 &559157874
@@ -1322,11 +1322,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70525d2e5cf54f646b920f0311145d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mezza1: {fileID: 2042544910}
-  mezza2: {fileID: 1830777580}
-  Fessura: {fileID: 1650754264}
-  percLogore: {fileID: 1695126021}
-  percBuone: {fileID: 1591074417}
+  filiale1: {fileID: 0}
+  filiale2: {fileID: 0}
+  filiale3: {fileID: 0}
+  filiale4: {fileID: 0}
+  filiale5: {fileID: 0}
+  filiale6: {fileID: 0}
+  tablet: {fileID: 0}
+  avvia: {fileID: 0}
+  locazione: {fileID: 0}
+  "difficolt\xE0": {fileID: 0}
+  nomeFiliale: {fileID: 0}
+  nonDisp: {fileID: 0}
+  ban1: {fileID: 0}
+  forzaNapoli: {fileID: 0}
 --- !u!61 &725146764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2214,11 +2223,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70525d2e5cf54f646b920f0311145d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mezza1: {fileID: 1095890878}
-  mezza2: {fileID: 1869808668}
-  Fessura: {fileID: 1650754264}
-  percLogore: {fileID: 820915668}
-  percBuone: {fileID: 2066948396}
+  filiale1: {fileID: 0}
+  filiale2: {fileID: 0}
+  filiale3: {fileID: 0}
+  filiale4: {fileID: 0}
+  filiale5: {fileID: 0}
+  filiale6: {fileID: 0}
+  tablet: {fileID: 0}
+  avvia: {fileID: 0}
+  locazione: {fileID: 0}
+  "difficolt\xE0": {fileID: 0}
+  nomeFiliale: {fileID: 0}
+  nonDisp: {fileID: 0}
+  ban1: {fileID: 0}
+  forzaNapoli: {fileID: 0}
 --- !u!1 &1335677949
 GameObject:
   m_ObjectHideFlags: 0
