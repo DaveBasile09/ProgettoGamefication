@@ -21,14 +21,6 @@ public class Cambiascena : MonoBehaviour
     private GameObject check3;
     private GameObject check4;
 
-    public static void reset()
-    {
-        A = false;
-        B = false;
-        C = false;
-        D = false;
-        ultimo = null;
-    }
 
     void Start()
     {

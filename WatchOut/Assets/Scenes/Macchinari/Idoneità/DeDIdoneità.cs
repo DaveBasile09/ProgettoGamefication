@@ -23,12 +23,7 @@ public class DeDIdoneità : MonoBehaviour, IDragHandler, IEndDragHandler
     public static bool v1=true;
     public static bool v2=true;
     
-    
-    public static void reset()
-    {
-        v1 = true;
-        v2 = true;
-    }
+
 
     public void OnTriggerEnter2D(Collider2D other)
     {

@@ -12,10 +12,6 @@ using UnityEngine.UI;
 public class SegnalaIdo : MonoBehaviour
 {
     public static HashSet<int> scelteId=new HashSet<int>() ;
-    public static void reset()
-    {
-       scelteId=new HashSet<int>();
-    }
     void Start()
     {
         Text t1 = (Text)GameObject.Find("soldi").GetComponent("Text");

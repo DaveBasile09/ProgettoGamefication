@@ -42,13 +42,6 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
     public GameObject testoFalse;
     public GameObject testoVere;
     
-    public static void reset()
-    {
-        v1=true;
-        v2=true;
-        v3=true;
-        v4=true;
-    }
    
     public void OnTriggerEnter2D(Collider2D other)
     {
