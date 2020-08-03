@@ -137,4 +137,19 @@ public GameObject nonSegnala3;
             nonSegnala3.gameObject.SetActive(false);
         }
     }
+    public static void reset()
+    {
+        cl1 = false;
+        cl2 = false;
+        cl3 = false;
+        presenzaNormativaS = 0;
+        presenzaNormativaR = 0;
+
+        normativaBancomatS = 0;
+        normativaBancomatR = 0;
+
+        normativaBanconoteS = 0;
+        normativaBanconoteR = 0;
+        
+    }
 }

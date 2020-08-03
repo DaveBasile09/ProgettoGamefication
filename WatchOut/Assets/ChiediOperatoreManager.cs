@@ -79,4 +79,10 @@ public class ChiediOperatoreManager : MonoBehaviour
             check3.SetActive(true);
         }
     }
+    public static void reset()
+    {
+     c1 = false;
+     c2 = false;
+     c3 = false;
+}
 }

@@ -139,6 +139,15 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IEndDragHandler
         transform.position=new Vector3(x,y,0);
     }
 
+    public static void reset()
+    {
+            GameObject ultimo=null;
+    v1 = true;
+     v2 = true;
+   v3 = true;
+    v4 = true;
+}
+
    
     
 }

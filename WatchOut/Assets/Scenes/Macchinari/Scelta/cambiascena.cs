@@ -67,6 +67,11 @@ public class cambiascena : MonoBehaviour
         SceneManager.LoadScene("Scenes/HomeBanca/HomeBanca", LoadSceneMode.Single);
 
     }
+    public static void reset()
+    {
+        Ido = false;
+    aut = false;
+}
 
    
 }

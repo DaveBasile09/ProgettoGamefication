@@ -172,5 +172,8 @@ public class BancaManager : MonoBehaviour
         PuntiDatiFilialeReputazione = 0;
         PuntiVersioneMacchineEconomico = 0;
         PuntiVersioneMacchineReputazione = 0;
-    }
+         datiFiliale = true;
+         macchine = true;
+        versioneMacchine = true;
+}
 }
