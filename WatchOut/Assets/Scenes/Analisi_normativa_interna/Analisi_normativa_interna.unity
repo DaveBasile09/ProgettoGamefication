@@ -363,8 +363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65, y: 14}
-  m_SizeDelta: {x: 163.19476, y: 39.579758}
+  m_AnchoredPosition: {x: 69, y: 11}
+  m_SizeDelta: {x: 227.26495, y: 39.579758}
   m_Pivot: {x: 0.816019, y: 0.6603451}
 --- !u!114 &178578203
 MonoBehaviour:
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Torna indietro
+  m_Text: Torna a chiedi operatore
 --- !u!222 &178578204
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2695,15 +2695,15 @@ RectTransform:
   m_GameObject: {fileID: 1592267507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85172, y: 0.85172, z: 0.85172}
   m_Children: []
   m_Father: {fileID: 864011183}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -206.54, y: 0.000016212463}
-  m_SizeDelta: {x: 221.29227, y: 48.387344}
+  m_AnchoredPosition: {x: -206.54, y: -5.5}
+  m_SizeDelta: {x: 221.29227, y: 95.663666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592267509
 MonoBehaviour:
@@ -2737,7 +2737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Presenza normativa
+  m_Text: Presenza normativa istruzioni macchine
 --- !u!222 &1592267510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2988,8 +2988,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -144.55, y: -205}
-  m_SizeDelta: {x: 289.104, y: 100}
+  m_AnchoredPosition: {x: -157.68, y: -205}
+  m_SizeDelta: {x: 348.2567, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694542730
 MonoBehaviour:

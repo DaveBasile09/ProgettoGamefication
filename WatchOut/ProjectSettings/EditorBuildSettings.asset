@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/Macchinari/Autenticit\xE0/TestAutenticit\xE0.unity"
+    path: Assets/Scenes/Menu/SampleScene.unity
+    guid: 6ce84145c4bfc264f8d3b9a28b355a05
+  - enabled: 1
+    path: "Assets/Scenes/Macchinari/Autenticita/TestAutenticit\xE0.unity"
     guid: 7e4161105dead654ea09a631e0d701db
   - enabled: 1
     path: Assets/Scenes/Analisi_normativa_interna/Analisi_normativa_interna.unity
@@ -33,9 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Endgame/Endgame.unity
     guid: 77ffd431d8025444fa05a105ee34ea99
   - enabled: 1
-    path: Assets/Scenes/Menu/SampleScene.unity
-    guid: 6ce84145c4bfc264f8d3b9a28b355a05
-  - enabled: 1
     path: Assets/Scenes/Analisi_Simec/SegnalazionePresenzaFotocopia.unity
     guid: 7d03144d0cc1f2447a22f9d4b075e6a4
   - enabled: 1
@@ -54,13 +54,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Analisi_Contratti/SegnalazionePresenzaClausola1.unity
     guid: c24878bf0aa7ad547937ff65bbe6a354
   - enabled: 1
-    path: "Assets/Scenes/Macchinari/Autenticit\xE0/SegnalazioneAutenticit\xE0.unity"
+    path: "Assets/Scenes/Macchinari/Autenticita/SegnalazioneAutenticit\xE0.unity"
     guid: d128e5d5737af524abc228cbefe72b44
   - enabled: 1
-    path: "Assets/Scenes/Macchinari/Idoneit\xE0/SegnalazioneIdoneit\xE0.unity"
+    path: "Assets/Scenes/Macchinari/Idoneita/SegnalazioneIdoneit\xE0.unity"
     guid: 84179d6e56f70f443a53a2713d7b95cd
   - enabled: 1
-    path: "Assets/Scenes/Macchinari/Idoneit\xE0/TestIdoneit\xE0.unity"
+    path: "Assets/Scenes/Macchinari/Idoneita/TestIdoneit\xE0.unity"
     guid: 5cafe0db47ce30f41aaa80a9a74ed293
   - enabled: 1
     path: Assets/Scenes/Chiedi_Operatore/Chiedi_Operatore.unity

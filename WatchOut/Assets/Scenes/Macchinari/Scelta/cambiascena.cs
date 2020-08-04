@@ -26,6 +26,7 @@ public class cambiascena : MonoBehaviour
         t2.text = System.Convert.ToString(HomeManager.reputazione);
         if (HomeManager.soldi <= 0 || HomeManager.reputazione<=0)
         {
+            EndgameManager.gameOver = true;
             SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
         }
         if (Ido)

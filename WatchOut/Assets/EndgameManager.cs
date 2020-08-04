@@ -9,12 +9,14 @@ public class EndgameManager : MonoBehaviour
 {
     public static int[] soldi=new int[6];
     public static int[] reputazione = new int[6];
-    public static bool gameOver = true;
+    public static bool gameOver = false;
     private string valutazioneTot;
+    public GameObject gO;
     public static string v = "";
     // Start is called before the first frame update
     void Start()
     {
+        if (gameOver) { showTarm(); }
         Text w = (Text)GameObject.Find("tua").GetComponent("Text");
         w.text = v;
         Text t0 =(Text) GameObject.Find("Soldi1").GetComponent("Text");
@@ -49,15 +51,15 @@ public class EndgameManager : MonoBehaviour
         s5.text = System.Convert.ToString(reputazione[5])+"/50";
 
 
-        int totale = soldi.Sum() + reputazione.Sum();
-        if (v.Equals("A")) {totale += 50;}
-        if (v.Equals("B")) {totale += 300;}
-        if (v.Equals("C")) {totale += 50;}
-        if (v.Equals("D")) {totale += 0;}
+        int totale = HomeManager.soldi + HomeManager.reputazione;
+        if (v.Equals("1")) {totale += 0;}
+        if (v.Equals("2")) {totale += 50;}
+        if (v.Equals("3")) {totale += 300;}
+        if (v.Equals("4")) {totale += 50;}
         Text valutazione=(Text)GameObject.Find("valutazione").GetComponent("Text");
         valutazione.text= System.Convert.ToString(totale);
 
-        MainMenu.v1 = valutazione.text;
+        if(!gameOver)MainMenu.v1 = valutazione.text;
 
 
     }
@@ -67,5 +69,27 @@ public class EndgameManager : MonoBehaviour
         if (!gameOver)MainMenu.b1 = true;
         SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
 
+    }
+    public static void reset()
+    {
+
+
+    soldi = new int[6];
+    reputazione = new int[6];
+     gameOver = false;
+     
+     v = "";
+}
+    public void showTarm()
+    {
+        StartCoroutine(ShowAndHide(gO, 2.5f));
+    }
+
+
+    IEnumerator ShowAndHide(GameObject go, float delay)
+    {
+        go.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        go.SetActive(false);
     }
 }

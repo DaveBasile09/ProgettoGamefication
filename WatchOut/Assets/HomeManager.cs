@@ -106,22 +106,22 @@ public class HomeManager : MonoBehaviour
 
     public void a()
     {
-        EndgameManager.v = "A";
+        EndgameManager.v = "1";
         SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
     }
     public void b()
     {
-        EndgameManager.v = "B";
+        EndgameManager.v = "2";
         SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
     }
     public void c()
     {
-        EndgameManager.v = "C";
+        EndgameManager.v = "3";
         SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
     }
     public void d()
     {
-        EndgameManager.v = "D";
+        EndgameManager.v = "4";
         SceneManager.LoadScene("Endgame", LoadSceneMode.Single);
     }
     public static void reset()

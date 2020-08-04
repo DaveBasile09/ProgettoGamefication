@@ -102,5 +102,6 @@ public class MainMenu : MonoBehaviour
         DeDIdoneità.reset();
         SegnalaIdo.reset();
         SegnalaAut.reset();
+        EndgameManager.reset();
     }
 }
